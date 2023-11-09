@@ -39,7 +39,9 @@ nav ul{
     align-items: center;
     font-family: miss-antonia;
 }
-
+.navv:hover{
+  color: rgb(130, 118, 165);
+}
 nav li{
     text-align: center;
     font-family: miss-antonia
@@ -118,12 +120,42 @@ nav a{
     color: rgb(255, 136, 0);
     font-weight: bold;
 }
-
+.botonhal:hover{
+color: rgb(189, 102, 4);
+}
 .halloweendeco{
     width: 100%;
     height: 600px;
 }
+.veniaofici{
+  text-align: center
+}
+.oficina {
+  display: flex;
+}
 
+.oficina img {
+  width: 50%;
+  height: auto;
+  padding: 0;
+}
+
+.map-container {
+  width: 50%; /* Ocupa el otro 50% del ancho del dispositivo */
+  height: auto; /* Altura fija, ajusta según sea necesario */
+  margin-left: 0; /* Espacio entre la imagen y el mapa */
+  position: relative;
+  padding: 0;
+}
+
+.map-container iframe {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 0;
+}
 .products {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -258,9 +290,43 @@ nav a{
   padding: 10px;
   width: 100%; 
 }
+.fotnav{
+  color: #fff;
+}
+.fotnav:hover{
+  color: rgb(130, 118, 165);
+}
 .snp{
   font-family: sans-serif
 }
-
-
-
+.dunderstaff{
+width: 100%;
+}
+.mision{
+font-family: sans-serif;
+}
+.vision{
+  font-family: sans-serif;
+}
+.formtitle{
+  text-align: center
+}
+.form {
+  background-color: #fff;
+  width: 90%;
+  max-width: 400px;
+  border-radius: 1rem;
+  display: block;
+  margin: 0 auto; /* Centrar el elemento horizontalmente */
+}
+.formcontainer{
+  width: 100%;
+  display: grid;
+  grid-auto-columns: 100%;
+  text-align: left;
+}
+.forminput{
+  font-size: 1rem;
+  outline: none;
+  border: none;
+}
