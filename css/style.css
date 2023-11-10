@@ -39,6 +39,9 @@ nav ul{
     align-items: center;
     font-family: miss-antonia;
 }
+.navv{
+  color: #fff;
+}
 .navv:hover{
   color: rgb(130, 118, 165);
 }
@@ -132,7 +135,20 @@ color: rgb(189, 102, 4);
 }
 .oficina {
   display: flex;
+  flex-direction: row;
 }
+
+.map-container {
+  display: flex;
+  flex-direction: column;
+}
+
+@media (max-width: 1200px) {
+  .oficina {
+      flex-direction: column;
+  }
+}
+
 
 .oficina img {
   width: 50%;
@@ -141,38 +157,24 @@ color: rgb(189, 102, 4);
 }
 
 .map-container {
-  width: 50%; /* Ocupa el otro 50% del ancho del dispositivo */
-  height: auto; /* Altura fija, ajusta según sea necesario */
-  margin-left: 0; /* Espacio entre la imagen y el mapa */
-  position: relative;
-  padding: 0;
+  width: 100%;
+  height: auto;
+  padding-top: 0px;
 }
 
 .map-container iframe {
   width: 100%;
   height: 100%;
-  position: absolute;
-  top: 0;
-  left: 0;
-  padding: 0;
 }
-.products {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 20px;
-  }
-  
-  .producto {
-    text-align: center;
-    padding: 10px;
-    
-  }
-  
-  .producto img {
+.producto img {
     max-width: 100%;
     height: 500px
   }
-  
+  .row{
+    font-family: miss-antonia;
+    font-size: large;
+    margin-bottom: 5px;
+  }
   .producto p {
     font-size: 25px;
     font-family: miss-antonia;
@@ -187,7 +189,7 @@ color: rgb(189, 102, 4);
     text-decoration: none;
     font-family: miss-antonia;
   }
-  
+
   .boton-compra:hover {
     background-color: #005EA3;
   }
@@ -201,35 +203,73 @@ color: rgb(189, 102, 4);
     width: 100%;
   }
   
-  .media-container {
+  .sectionsoc1 {
     display: flex;
+    width: 100%;
+    justify-content: space-between; 
+  }
+  
+  .sectionsoc1 .row {
     width: 100%;
   }
   
-  .headsup,
-  .diversity {
-    width: 50%; 
+  .diversi-container,
+  .headsup {
+    width: 100%;
     height: auto;
+  }
+  .sectionsoc1 .diversi-container {
+    width: 100%;
+    height: 100%;
+  }
+  
+  .sectionsoc1 iframe.diversity {
+    width: 100%;
+    height: 100%;
+  }
+  
+  .sectionsoc1 img.headsup {
+    width: 100%;
+    height: 100%;
     object-fit: cover;
   }
-  
-          
-.dundiesfot{
-    display: flex;
+
+  .dundiesfot {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 0px; 
     width: 100%;
-  }
-  
-  .dundiesfot img{
-    flex: 1; 
-    max-width: 33.33%; 
-    height: auto;
-  }
+}
+
+.dundiesfot img {
+    width: 100%;
+    height: 100%;
+}
+
+@media (max-width: 1199px) {
+    .dundiesfot {
+        grid-template-columns: repeat(2, 1fr); /* Dos columnas para tamaños de pantalla medianos */
+    }
+}
+
+@media (max-width: 576px) {
+    .dundiesfot {
+        grid-template-columns: repeat(1, 1fr); /* Una columna para tamaños de pantalla pequeños */
+    }
+}
+
   .secdund{
     max-width: 100%;
   }
-  .contdundies{
+  .contdundies {
     display: flex;
     align-items: flex-start;
+  }
+  
+  @media (max-width: 1199px) {
+    .contdundies {
+      flex-direction: column;
+    }
   }
   .listad{
     flex: 1;
@@ -258,7 +298,17 @@ color: rgb(189, 102, 4);
     width: 1900px;
     height:500px;
   }
+  @media (max-width: 1199px) {
+    .fothalemp {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
 
+@media (max-width: 576px) {
+    .fothalemp {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
 .footer{
     list-style-type: none;
     font-family: miss-antonia;
@@ -329,4 +379,7 @@ font-family: sans-serif;
   font-size: 1rem;
   outline: none;
   border: none;
+}
+.h1sobrenosotros{
+  font-family: miss-antonia;
 }

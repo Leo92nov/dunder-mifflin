@@ -3,45 +3,65 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/bootstrap.css">
     <link rel="stylesheet" href="./css/style.css">
     <title>Document</title>
 </head>
 <body>
-    <header id="top">
-        <nav>
-            <ul>
-                <img src="./img/Dunder-Mifflin-Logo.png" alt="logo dunder mifflin" title="logo dunder mifflin inc" id="dunderlogotop">
-                <li><a href="./index.html" class="navv">INICIO</a>
-                </li> 
-                <li><a href="./productos.html" class="navv">PRODUCTOS</a>
-                </li> 
-                <li><a href="./recreacion-sociedad.html" class="navv">RECREACIÓN Y CREATIVIDAD</a>
-                </li> 
-                <li><a href="./sobre-nosotros.html" class="navv">SOBRE NOSOTROS</a>
-                </li> 
-                <li><a href="./contacto.html" class="navv">CONTACTO</a>
-                </li> 
-             </ul>
-           
+    <header id="top" class="container-fluid">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-black">
+            <a class="navbar-brand" href="#">
+                <img src="./img/Dunder-Mifflin-Logo.png" alt="logo dunder mifflin" title="logo dunder mifflin inc" id="dunderlogotop" height="30">
+            </a>
+            <button class="navbar-toggler d-lg-none d-xl-none" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav w-100 d-flex justify-content-between">
+                    <li class="nav-item">
+                        <a class="nav-link navv" href="./index.html">INICIO</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link navv" href="./productos.html">PRODUCTOS</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link navv" href="./recreacion-sociedad.html">RECREACIÓN Y CREATIVIDAD</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link navv" href="./sobre-nosotros.html">SOBRE NOSOTROS</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link navv" href="./contacto.html">CONTACTO</a>
+                    </li>
+                </ul>
+            </div>
         </nav>
     </header>
     <h1 class="titrecsoc">Recreacion y creatividad</h1>
     <h2 class="tit2">Nuestro dia de la diversidad</h2>
         <p>En Dunder Mifflin nos tomamos muy enserio nuestro rol de empresa en tiempos modernos por lo que impustamos a nuestros empleados a que experimentes y vivan la diversidad para generar empeatia con aquellos que menos se parecen a nostoros mismos</p>
-    <section class="sectionsoc1">
-        <img src="./img/Diversity day.jpg" alt="Empleados dunder mifflin jugando HeadsUp" title="HeadsUp en Dunder Mifflin" class="headsup">
-        <iframe src="https://www.youtube.com/embed/PtYBp10h2O0?si=nD0hgtmROxCHskPm" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"class="diversity"></iframe>
-    </section>
-    
+        <section class="sectionsoc1">
+            <div class="row">
+                <div class="col-lg-6 col-md-12">
+                    <div class="diversi-container">
+                        <iframe src="https://www.youtube.com/embed/PtYBp10h2O0?si=nD0hgtmROxCHskPm" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" class="diversity"></iframe>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-12">
+                    <img src="./img/Diversity day.jpg" alt="Empleados dunder mifflin jugando HeadsUp" title="HeadsUp en Dunder Mifflin" class="headsup">
+                </div>
+            </div>
+        </section>
     <h2>Premios dundies</h2>
         <p>Una noche por año otorgamos nuestros famosos premios Dundies a aquellos empleados en reconocimiento de sus aportes duranote el ciclo laboral</p>
-    <section class="secdund">
-        <div class="dundiesfot">
-            <img src="./img/Dundies1.jpg" alt="entrega de premios dundies en bar" title="Premiacion de dundies">
-            <img src="./img/Dundies2.jpg" alt="entrega de premios dundies en bar" title="Premiacion de dundies">
-            <img src="./img/Dundies3.jpg" alt="entrega de premios dundies en bar" title="Premiacion de dundies">
-        </div>
+        <section class="secdund row">
+            <div class="dundiesfot col-lg-4 col-md-6 col-sm-12">
+                <img src="./img/Dundies1.jpg" alt="entrega de premios dundies en bar" title="Premiación de Dundies" class="img-fluid">
+                <img src="./img/Dundies2.jpg" alt="entrega de premios dundies en bar" title="Premiación de Dundies" class="img-fluid">
+                <img src="./img/Dundies3.jpg" alt="entrega de premios dundies en bar" title="Premiación de Dundies" class="img-fluid">
+            </div>
         <div class="contdundies">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/XXjStnr_g3M?si=ju0V3bUSXZuFPNPa" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen class="ifdund"></iframe>
             <ul class="listad">
                 <h2>GANADORES DE LA NOCHE</h2>
                 <li>Phyllis: Premio Castor más ocupado</li>
@@ -54,7 +74,6 @@
                 <li>Pam: Premio “Zapatillas de deporte más blancas”</li>
                 <li>Jim: Premio “Jim Halpert”</li>
             </ul>
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/XXjStnr_g3M?si=ju0V3bUSXZuFPNPa" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen class="ifdund"></iframe>
         </div>
     </section>
     <h2 class="tit2hal">Mes de Halloween</h2>
@@ -81,5 +100,6 @@
             </div>
         </div>
     </footer>
+    <script src="./js/bootstrap.js"></script>
     </body>
 </html>

@@ -3,81 +3,109 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/bootstrap.css">
     <link rel="stylesheet" href="./css/style.css">
     <title>Document</title>
 </head>
 <body>
-    <header id="top">
-        <nav>
-            <ul>
-                <img src="./img/Dunder-Mifflin-Logo.png" alt="logo dunder mifflin" title="logo dunder mifflin inc" id="dunderlogotop">
-                <li><a href="./index.html" class="navv">INICIO</a>
-                </li> 
-                <li><a href="./productos.html" class="navv">PRODUCTOS</a>
-                </li> 
-                <li><a href="./recreacion-sociedad.html" class="navv">RECREACIÓN Y CREATIVIDAD</a>
-                </li> 
-                <li><a href="./sobre-nosotros.html" class="navv">SOBRE NOSOTROS</a>
-                </li> 
-                <li><a href="./contacto.html" class="navv">CONTACTO</a>
-                </li> 
-             </ul>
-           
+    <header id="top" class="container-fluid">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-black">
+            <a class="navbar-brand" href="#">
+                <img src="./img/Dunder-Mifflin-Logo.png" alt="logo dunder mifflin" title="logo dunder mifflin inc" id="dunderlogotop" height="30">
+            </a>
+            <button class="navbar-toggler d-lg-none d-xl-none" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav w-100 d-flex justify-content-between">
+                    <li class="nav-item">
+                        <a class="nav-link navv" href="./index.html">INICIO</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link navv" href="./productos.html">PRODUCTOS</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link navv" href="./recreacion-sociedad.html">RECREACIÓN Y CREATIVIDAD</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link navv" href="./sobre-nosotros.html">SOBRE NOSOTROS</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link navv" href="./contacto.html">CONTACTO</a>
+                    </li>
+                </ul>
+            </div>
         </nav>
     </header>
     <h1>Nuestros productos</h1>
-    <section class="products">
-        <div class="producto">
-            <img src="./img/form-cont-3226_400x400.jpg" alt="foto de formulario contable 3226" title="Formulario Continuo tipo 3226" >
-            <p class="ptext">Formulario continuo tipo 3226 400 x 400</p>
-            <a href="./contacto.html" class="boton-compra">Comprar</a>
-        </div>
-        <div class="producto">
-            <img src="./img/form-cont-3220_400x400.jpg" alt="foto de formulario continuo 3220" title="Formulario continuo tipo 3220">
-            <p class="ptext">Formulario continuo tipo 3220 400 x 400</p>
-            <a href="./contacto.html" class="boton-compra">Comprar</a>
-        </div>
-        <div class="producto">
-            <img src="./img/form-cont-3220_400x400 (2).jpg" alt="formulario continuo tipo 3221" title="Formulario continuo tipo 3221">
-            <p class="ptext">Formulario continuo tipo 3221 400 x 400</p>
-            <a href="./contacto.html" class="boton-compra">Comprar</a>
-        </div>
-        <div class="producto">
+    <main class="container-flui text-center">
+
+        <section class="row row">
+            <div class="col-12 col-sm-12 col-md-6 col-lg-4">
+                <img src="./img/form-cont-3226_400x400.jpg" alt="foto de formulario contable 3226" title="Formulario Continuo tipo 3226" >
+                <p class="ptext">Formulario continuo tipo 3226 400 x 400</p>
+                <a href="./contacto.html" class="boton-compra">Comprar</a>
+            </div>
+            <div class="col-12 col-sm-12 col-md-6 col-lg-4">
+                <img src="./img/form-cont-3220_400x400.jpg" alt="foto de formulario continuo 3220" title="Formulario continuo tipo 3220">
+                <p class="ptext">Formulario continuo tipo 3220 400 x 400</p>
+                <a href="./contacto.html" class="boton-compra">Comprar</a>
+            </div>
+
+            <div class="col-12 col-sm-12 col-md-6 col-lg-4">
+                <img src="./img/form-cont-3220_400x400 (2).jpg" alt="formulario continuo tipo 3221" title="Formulario continuo tipo 3221">
+                <p class="ptext">Formulario continuo tipo 3221 400 x 400</p>
+                <a href="./contacto.html" class="boton-compra">Comprar</a>
+            </div>
+        </section>
+        <section class="row">
+            <div class="col-12 col-sm-12 col-md-6 col-lg-4">
             <img src="./img/resma-punax-75_400x400.jpg" alt="resma marca punax 400 x 400" title="Resma punax A4">
             <P class="ptext">Resma punax A4</P>
             <a href="./contacto.html" class="boton-compra">Comprar</a>
-        </div>
-        <div class="producto">
+            </div>
+
+            <div class="col-12 col-sm-12 col-md-6 col-lg-4">
             <img src="./img/resma-pampa-75g_400x400.jpg" alt="resma marca pampa A4 400 x 400" title="Resma pampa A4">
             <p class="ptext">Resma A4 Pampa 75g</p>
             <a href="./contacto.html" class="boton-compra">Comprar</a>
-        </div>
-        <div class="producto">
+            </div>
+
+            <div class="col-12 col-sm-12 col-md-6 col-lg-4">
             <img src="./img/resma-autor-a4-75_400x400.jpg" alt="resma marca autor A4 75gr." title="Resma A4 75gr Autor">
             <p class="ptext">Resma A4 Autor 75gr.</p>
             <a href="./contacto.html" class="boton-compra">Comprar</a>
-        </div>
-        <div class="producto">
+            </div>
+        </section>
+        <section class="row">
+            <div class="col-12 col-sm-12 col-md-6 col-lg-4">
             <img src="./img/resma-a3-80-g_400x400.jpg" alt="resma marca autor tamaño a3 80gr." title="Resma Autor A3 80gr.">
             <p class="ptext">Resma Autor A3 80gr.</p>
             <a href="./contacto.html" class="boton-compra">Comprar</a>
-        </div>
-        <div class="producto">
+            </div>
+
+            <div class="col-12 col-sm-12 col-md-6 col-lg-4">
             <img src="./img/resma-autor-a-4-80_400x400.jpg" alt="resma marca autor tamaño A4 80gr." title="Resma Autor tamaño A4 80gr.">
             <p class="ptext">Resma Autor A4 80gr.</p>
             <a href="./contacto.html" class="boton-compra">Comprar</a>
-        </div>
-        <div class="producto">
+            </div>
+
+            <div class="col-12 col-sm-12 col-md-6 col-lg-4">
             <img src="img/resma-autor-carta-80g.jpg" alt="Resma autor carta 80gr" title="Resma Autor carta 80gr.">
             <p class="ptext">Resma Autor Carta 80gr.</p>
             <a href="./contacto.html" class="boton-compra">Comprar</a>
-        </div>
-        <div class="producto">
+            </div>
+        </section>
+        <section class="row">
+            <div class="col-12 col-sm-12 col-md-6 col-lg-4 rowl">
             <img src="./img/resma-autor-90_800x800.jpg" alt="resma marca autor A4 90gr." title="Resma Autor A4 90gr.">
             <p class="ptext">Resma Autor A4 90gr.</p>
             <a href="./contacto.html" class="boton-compra">Comprar</a>
-        </div>
-    </section>
+            </div>
+            
+        </section>
+    </main>
+
     <footer class="footer">
         <div class="containerf">
             <div class="footer-row">
@@ -93,5 +121,6 @@
             </div>
         </div>
     </footer>
+<script src="./js/bootstrap.js"></script>
 </body>
 </html>
