@@ -6,7 +6,13 @@
 .bodyi{
   min-height: 100vh;
   margin: 0;
+  padding: 0%;
   background-color: rgb(172, 177, 180);
+}
+#top{
+  background-color: black;
+  margin: 0;
+  padding: 0;
 }
 h1{
     font-family: miss-antonia;
@@ -14,52 +20,57 @@ h1{
     text-align: center;
 }
 h2{
-    font-family: miss-antonia;}
-
-#top{
-    background-color: black;
-    width: 100%;
-    height: auto;}
-
-#dunderlogotop{
-    width: 200px;
-    height: 100px;  
-    padding: 0;
-    margin: 0;
-    top: 10px;
-    left: 10px;  
-}
-nav ul{
-    font-size:x-large;
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
     font-family: miss-antonia;
-}
-.navv{
-  color: #fff;
-}
-.navv:hover{
-  color: rgb(130, 118, 165);
-}
-nav li{
-    text-align: center;
-    font-family: miss-antonia
+  }
 
+
+.navbar {
+  width: 100%;
+  background-color: black;
+  padding: 0;
+  display: flex;
+  Justify-content: flex end;
 }
-nav a{
-    text-decoration: none;
-    color: white;
-    padding: 10px 20px;
-    text-align: center;
-    align-items: center;
+.divnav{
+  padding: 0%;
+  margin: 0%;
+  background-color: black;
 }
-.divimgw{
+.imgnavbar{
+  width: 100%;
+}
+.navbar-brand{
+  width: 150px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
   margin: 0;
+  padding: 0;
 }
+.navbar-nav {
+  width: 100%;
+  align-items: center;
+  justify-content: end;
+}
+.navbar-nav .nav-link {
+  color: white;
+  margin-right: 20px;
+}
+.nav-item{
+  color: #fff;
+  font-size:x-large;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: flex-end;
+  align-items: right;
+  font-family: miss-antonia;
+}
+.navbar-nav .nav-item {
+  margin-left: 10px;
+}
+
 .img-wide{
     width: 100%;
     height: 33rem;
