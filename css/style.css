@@ -1,45 +1,33 @@
+@charset "UTF-8";
 @font-face {
-    font-family: miss-antonia;
-    src: url(../font/miss_antonia/Miss\ Antonia.otf);
-  
+  font-family: miss-antonia;
+  src: url(../font/miss_antonia/Miss\ Antonia.otf);
 }
-.bodyi{
+.bodyi {
   min-height: 100vh;
   margin: 0;
   padding: 0%;
   background-color: rgb(172, 177, 180);
 }
-#top{
+
+#top {
   background-color: black;
   margin: 0;
   padding: 0;
 }
-h1{
-    font-family: miss-antonia;
-    font-size: xx-large;
-    text-align: center;
-}
-h2{
-    font-family: miss-antonia;
-  }
-
-
-.navbar {
+#top .navbar {
   width: 100%;
   background-color: black;
   padding: 0;
   display: flex;
-  Justify-content: flex end;
+  justify-content: flex-end;
 }
-.divnav{
+#top .navbar .divnav {
   padding: 0%;
   margin: 0%;
   background-color: black;
 }
-.imgnavbar{
-  width: 100%;
-}
-.navbar-brand{
+#top .navbar .divnav .navbar-brand {
   width: 150px;
   display: flex;
   align-items: center;
@@ -47,18 +35,22 @@ h2{
   margin: 0;
   padding: 0;
 }
-.navbar-nav {
+#top .navbar .divnav .nav-item {
+  color: #fff;
+  font-size: x-large;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  font-family: miss-antonia;
+}
+#top .navbar .divnav .nav-item .navbar-nav {
   width: 100%;
   align-items: center;
-  justify-content: end;
+  justify-content: flex-end;
 }
-.navbar-nav .nav-link {
-  color: white;
-  margin-right: 20px;
-}
-.nav-item{
+#top .navbar .divnav .nav-item .navbar-nav .nav-item2 {
   color: #fff;
-  font-size:x-large;
+  font-size: x-large;
   list-style: none;
   padding: 0;
   margin: 0;
@@ -67,330 +59,163 @@ h2{
   align-items: right;
   font-family: miss-antonia;
 }
-.navbar-nav .nav-item {
-  margin-left: 10px;
+#top .navbar .divnav .nav-item .navbar-nav .nav-item2 .nav-link {
+  color: white;
+  margin-right: 20px;
 }
 
-.img-wide{
-    width: 100%;
-    height: 33rem;
-    padding: 0%;
-    margin: 0;
-         
+.divimgw {
+  width: 100%;
 }
-.dunderred{
-    width: 450px;
-    height: 250px;
-    position: absolute;
-    top: 18%;
-    left: 3%;
+.divimgw .img-wide {
+  width: 100%;
+  height: 33rem;
+  padding: 0%;
+  margin: 0;
 }
-.leyendalogo{
-    font-size: xx-large;
-    font-family: miss-antonia;
-    position: absolute;
-    top: 43%;
-    left: 2%;
-    font-weight: bold;
+.divimgw .dunderred {
+  width: 450px;
+  height: 250px;
+  position: absolute;
+  top: 18%;
+  left: 3%;
 }
+.divimgw .leyendalogo {
+  font-size: xx-large;
+  font-family: miss-antonia;
+  position: absolute;
+  top: 47%;
+  left: 2%;
+  font-weight: bold;
+}
+
 .galeria {
   display: flex;
   flex-wrap: wrap;
   margin: 0;
 }
-
-.galeria img {
-  width: 20%; 
+.galeria .fotogaleria {
+  width: 20%;
   height: auto;
   margin-bottom: 0%;
   object-fit: cover;
-  box-sizing: border-box; 
+  box-sizing: border-box;
   margin-top: 0;
 }
 
-.hallow{
-    font-size: x-large;
-    font-family: miss-antonia;
-    text-align-last: center;
-}
-.copntenedor{
-    position: relative;
-}
-.textosuperpuesto{
-    position: absolute;
-    top: 150%;
-    left: 42%;
-    font-family: miss-antonia;
-    font-size: xx-large;
-    font-weight: bold;
-}
-.botonhal{
-    position: absolute;
-    top: 158%;
-    left: 57%;
-    padding: 10px 20px;
-    font-family: miss-antonia;
-    font-size: xx-large;
-    color: rgb(255, 136, 0);
-    font-weight: bold;
-}
-.botonhal:hover{
-color: rgb(189, 102, 4);
-}
-.halloweendeco{
-    width: 100%;
-    height: 600px;
-}
-.veniaofici{
-  text-align: center
-}
-.oficina {
-  display: flex;
-  flex-direction: row;
+.hallow {
+  color: rgb(255, 187, 0);
+  font-size: x-large;
+  font-family: miss-antonia;
+  text-align-last: center;
 }
 
-.map-container {
-  display: flex;
-  flex-direction: column;
+.contenedor {
+  position: relative;
 }
-
-@media (max-width: 1200px) {
-  .oficina {
-      flex-direction: column;
-  }
-}
-
-
-.oficina img {
-  width: 50%;
-  height: auto;
-  padding: 0;
-}
-
-.map-container {
+.contenedor .halloweendeco {
   width: 100%;
-  height: auto;
-  padding-top: 20px;
+  height: 600px;
+}
+.contenedor .textosuperpuesto {
+  position: absolute;
+  top: 58%;
+  left: 42%;
+  font-family: miss-antonia;
+  font-size: xx-large;
+  font-weight: bold;
 }
 
-.map-container iframe {
-  width: 100%;
-  height: 100%;
+.botonhal {
+  position: absolute;
+  top: 63%;
+  left: 57%;
+  padding: 10px 20px;
+  font-family: miss-antonia;
+  font-size: xx-large;
+  color: rgb(255, 136, 0);
+  font-weight: bold;
 }
-.producto img {
-    max-width: 100%;
-    height: 500px
-  }
-  .row{
-    font-family: miss-antonia;
-    font-size: large;
-    margin-bottom: 5px;
-  }
-  .producto p {
-    font-size: 25px;
-    font-family: miss-antonia;
-}
-  .boton-compra {
-    background-color: #0077B5;
-    color: #fff;
-    padding: 7px 13px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    text-decoration: none;
-    font-family: miss-antonia;
-  }
-
-  .boton-compra:hover {
-    background-color: #005EA3;
-  }
-  .titrecsoc{
-    font-family: miss-antonia;
-    font-size: xx-large;
-    text-align: center;
-  }
-  .sectionsoc1 {
-    display: flex;
-    width: 100%;
-  }
-  
-  .sectionsoc1 {
-    display: flex;
-    width: 100%;
-    justify-content: space-between; 
-  }
-  
-  .sectionsoc1 .row {
-    width: 100%;
-  }
-  
-  .diversi-container,
-  .headsup {
-    width: 100%;
-    height: auto;
-  }
-  .sectionsoc1 .diversi-container {
-    width: 100%;
-    height: 100%;
-  }
-  
-  .sectionsoc1 iframe.diversity {
-    width: 100%;
-    height: 100%;
-  }
-  
-  .sectionsoc1 img.headsup {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-  }
-
-  .dundiesfot {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-gap: 0px; 
-    width: 100%;
+.botonhal:hover {
+  color: rgb(189, 102, 4);
 }
 
-.dundiesfot img {
-    width: 100%;
-    height: 100%;
+.footer {
+  list-style-type: none;
+  font-family: miss-antonia;
+  padding: 0px 0px;
+  background-color: black;
 }
-
-@media (max-width: 1199px) {
-    .dundiesfot {
-        grid-template-columns: repeat(2, 1fr); /* Dos columnas para tamaños de pantalla medianos */
-    }
-}
-
-@media (max-width: 576px) {
-    .dundiesfot {
-        grid-template-columns: repeat(1, 1fr); /* Una columna para tamaños de pantalla pequeños */
-    }
-}
-
-  .secdund{
-    max-width: 100%;
-  }
-  .contdundies {
-    display: flex;
-    align-items: flex-start;
-  }
-  
-  @media (max-width: 1199px) {
-    .contdundies {
-      flex-direction: column;
-    }
-  }
-  .listad{
-    flex: 1;
-    width: 50%;
-    padding: 0; 
-    font-size: xx-large;
-    font-family: miss-antonia;
-    line-height: 1.5;
-  }
-  .ifdund {
-    width: 1000px; 
-    height: 800px; 
-  }
-.tit2hal{
-    font-size: xx-large;
-    text-align: center
-}
-
-.fothalemp {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-gap: 10px; 
-  }
-  .fothalemp img {
-    max-width: 100%;
-    width: 1900px;
-    height:500px;
-  }
-  @media (max-width: 1199px) {
-    .fothalemp {
-        grid-template-columns: repeat(1, 1fr);
-    }
-}
-
-@media (max-width: 576px) {
-    .fothalemp {
-        grid-template-columns: repeat(1, 1fr);
-    }
-}
-.footer{
-    list-style-type: none;
-    font-family: miss-antonia;
-    padding: 0px 0px;
-    background-color: black;
-  }
-.containerf{
+.footer .containerf {
   min-width: 100%;
 }
-
-.footer-links ul {
+.footer .containerf .footer-row .footer-links {
   list-style: none;
   padding: 0;
   margin: 0;
   display: flex;
   justify-content: space-between; /* Espacios simétricos entre elementos */
-  width: 100%; 
+  width: 100%;
 }
-
-.footer-links li {
-  flex: 1; 
-  margin: 0 10px; 
+.footer .containerf .footer-row .footer-links .footer-ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: space-between; /* Espacios simétricos entre elementos */
+  width: 100%;
 }
-
-.footer-links a {
+.footer .containerf .footer-row .footer-links .footer-ul .footer-li {
+  flex: 1;
+  margin: 0 10px;
+}
+.footer .containerf .footer-row .fotnav {
+  color: #fff;
   display: block;
   text-decoration: none;
   text-align: center;
   padding: 10px;
-  width: 100%; 
+  width: 100%;
 }
-.fotnav{
-  color: #fff;
-}
-.fotnav:hover{
+.footer .containerf .footer-row .fotnav:hover {
   color: rgb(130, 118, 165);
 }
-.snp{
-  font-family: sans-serif
-}
-.dunderstaff{
-width: 100%;
-}
-.mision{
-font-family: sans-serif;
-}
-.vision{
-  font-family: sans-serif;
-}
-.formtitle{
-  text-align: center
-}
-.form {
-  background-color: #fff;
-  width: 90%;
-  max-width: 400px;
-  border-radius: 1rem;
-  display: block;
-  margin: 0 auto; /* Centrar el elemento horizontalmente */
-}
-.formcontainer{
-  width: 100%;
-  display: grid;
-  grid-auto-columns: 100%;
-  text-align: left;
-}
-.forminput{
-  font-size: 1rem;
-  outline: none;
-  border: none;
-}
-.h1sobrenosotros{
+
+.contac {
   font-family: miss-antonia;
 }
+
+.veniaofici {
+  font-family: miss-antonia;
+  text-align: center;
+}
+
+.oficina {
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: row;
+  height: 32rem;
+}
+@media (max-width: 1000px) {
+  .oficina .oficina {
+    flex-direction: column;
+  }
+}
+.oficina .office {
+  width: 50%;
+}
+.oficina .mapa {
+  display: flex;
+  flex-direction: column;
+  min-width: 50%;
+  height: 100%;
+  margin: 0;
+}
+
+.formtitle {
+  font-family: miss-antonia;
+}
+
+/*# sourceMappingURL=style.css.map */
