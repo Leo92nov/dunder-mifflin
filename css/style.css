@@ -1,6 +1,6 @@
 /* HALLOWEEN */
 .contenedorf {
-  background-image: url("../img/navidad_dunder.jpg");
+  background-image: url("../assets//img/navidad_dunder.jpg");
 }
 
 .banerof {
@@ -9,7 +9,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  background-image: url("../img/navbaner.jpg");
+  background-image: url("../assets//img/navbaner.jpg");
   box-sizing: border-box;
   background-size: 100% 100%;
 }
@@ -149,7 +149,7 @@
   list-style: none;
   padding: 0;
   margin: 0;
-  font-family: miss-antonia;
+  font-family: "miss-antonia";
 }
 #top .navbar .divnav .nav-item .navbar-nav {
   width: 100%;
@@ -165,7 +165,7 @@
   display: flex;
   justify-content: flex-end;
   align-items: right;
-  font-family: miss-antonia;
+  font-family: "miss-antonia";
 }
 #top .navbar .divnav .nav-item .navbar-nav .nav-item2 .nav-link {
   color: white;
@@ -190,16 +190,34 @@
   margin: 0;
   position: relative;
 }
+@keyframes girardund {
+  0% {
+    transform: rotate(0deg);
+  }
+  25% {
+    transform: rotate(22deg);
+  }
+  50% {
+    transform: rotate(0deg);
+  }
+  75% {
+    transform: rotate(-22deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
 .divimgw .dunderley .dunderred {
   width: 450px;
   height: 250px;
   position: absolute;
   top: 12%;
   left: 3%;
+  animation: girardund 4s linear infinite;
 }
 .divimgw .dunderley .leyendalogo {
-  font-size: 2rem;
-  font-family: miss-antonia;
+  font-size: "2rem";
+  font-family: "miss-antonia";
   color: #000000;
   position: absolute;
   top: 45%;
@@ -223,7 +241,7 @@
   }
   .divimgw .dunderley .leyendalogo {
     font-size: 1.5rem;
-    font-family: miss-antonia;
+    font-family: "miss-antonia";
     color: #000000;
     position: absolute;
     top: 41%;
@@ -261,7 +279,7 @@
 .footer {
   list-style-type: none;
   width: 100%;
-  font-family: miss-antonia;
+  font-family: "miss-antonia";
   padding: 0px 0px;
   background-color: black;
 }
@@ -297,16 +315,21 @@
   width: 100%;
 }
 .footer .containerf .footer-row .fotnav:hover {
-  color: rgb(130, 118, 165);
+  background-image: linear-gradient(90deg, rgb(49, 41, 199) 0%, rgb(11, 93, 148) 64%, rgb(0, 212, 255) 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
   transform: scale(1.1);
 }
 
 .contac {
-  font-family: miss-antonia;
+  font-size: "2rem";
+  font-family: "miss-antonia";
 }
 
 .veniaofici {
-  font-family: miss-antonia;
+  font-size: "1.7rem";
+  font-family: "miss-antonia";
   text-align: center;
 }
 @media (max-width: 993px) {
@@ -358,7 +381,8 @@
 
 .formtitle {
   display: flex;
-  font-family: miss-antonia;
+  font-size: "1.7rem";
+  font-family: "miss-antonia";
   justify-content: center;
 }
 @media (max-width: 993px) {
@@ -372,11 +396,20 @@
 }
 
 .formulario {
+  height: 38rem;
   display: flex;
   justify-content: center;
+  flex-flow: column;
+  align-items: center;
+  background-image: url(../assets/img/papiro.png);
+  background-repeat: no-repeat;
+  background-size: auto;
+  background-position: center center;
 }
 .formulario .form {
-  background-color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 100%;
   max-width: 20rem;
   border-radius: 1rem;
@@ -396,8 +429,10 @@
 }
 .formulario .form .formcontainer {
   width: 100%;
-  border: 2px solid #000000;
+  /*  border: 2px solid #000000; */
   border-radius: 1rem;
+  background-image: url(../assets/img/);
+  background-size: cover;
   padding: 0;
   margin: 0%;
   box-sizing: border-box;
@@ -426,7 +461,7 @@
 }
 
 .tit {
-  font-family: miss-antonia;
+  font-family: "miss-antonia";
   display: flex;
   justify-content: center;
 }
@@ -449,7 +484,7 @@
 }
 
 .row {
-  font-family: "miss-antonia";
+  font-family: "$primary-font";
   font-size: 1.3rem;
   margin-bottom: 5px;
   display: flex;
@@ -472,7 +507,7 @@
   }
 }
 .row .ptext {
-  font-family: "miss-antonia";
+  font-family: "$primary-font";
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -490,10 +525,11 @@
   border-radius: 5px;
   cursor: pointer;
   text-decoration: none;
-  font-family: "miss-antonia";
+  font-family: "$primary-font";
 }
 .row .boton-compra:hover {
   background-position: right;
+  transform: scale(2);
 }
 @media (max-width: 1210px) {
   .row .imgp {
@@ -508,7 +544,10 @@
 }
 
 .h1sobrenosotros {
-  font-family: miss-antonia;
+  display: flex;
+  justify-content: center;
+  font-size: "2rem";
+  font-family: "miss-antonia";
 }
 
 .snp {
@@ -520,7 +559,7 @@
 }
 
 .misionvision {
-  font-family: miss-antonia;
+  font-family: "miss-antonia";
 }
 .misionvision .mision {
   font-family: sans-serif;
@@ -535,14 +574,14 @@
 }
 
 .titrecsoch1 {
-  font-family: miss-antonia;
-  font-size: 2.5rem;
+  font-family: "miss-antonia";
+  font-size: "2rem";
   text-align: center;
 }
 
 .titrecsoch2 {
-  font-family: miss-antonia;
-  font-size: 2.1rem;
+  font-family: "miss-antonia";
+  font-size: "1.7rem";
   text-align: center;
 }
 
@@ -600,7 +639,7 @@
 }
 
 .precsoc {
-  font-family: miss-antonia;
+  font-family: "miss-antonia";
   font-size: 1.5rem;
   display: flex;
   justify-content: center;
@@ -672,7 +711,7 @@
   width: 100%;
   padding: 0;
   font-size: 2rem;
-  font-family: miss-antonia;
+  font-family: "miss-antonia";
   line-height: 1;
 }
 @media (max-width: 1210px) {
@@ -687,7 +726,8 @@
   }
 }
 .tit2hal {
-  font-size: xx-large;
+  font-family: "miss-antonia";
+  font-size: "1.7rem";
   text-align: center;
 }
 

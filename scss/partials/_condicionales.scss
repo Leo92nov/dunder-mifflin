@@ -4,7 +4,7 @@ $fiesta: "navidad";
 
 @if ($fiesta == "halloween") {
     .contenedorf {
-        background-image: url("../img/Halloween.jpg");
+        background-image: url("../assets/img/Halloween.jpg");
     }
     .banerof{
         width: 100%;
@@ -12,7 +12,7 @@ $fiesta: "navidad";
         display: flex;
         justify-content: center;
         align-items: center;
-        background-image: url("../img/halloweenbaner.jpg");
+        background-image: url("../assets/img/halloweenbaner.jpg");
         box-sizing: border-box;
         background-size: 100% 100%;
         border: 2px solid;
@@ -77,7 +77,7 @@ $fiesta: "navidad";
 
 @else if($fiesta == "navidad") {
     .contenedorf {
-      background-image: url("../img/navidad_dunder.jpg");
+      background-image: url("../assets//img/navidad_dunder.jpg");
     }
   
     .banerof{
@@ -86,7 +86,7 @@ $fiesta: "navidad";
         display: flex;
         justify-content: center;
         align-items: center;
-        background-image: url("../img/navbaner.jpg");
+        background-image: url("../assets//img/navbaner.jpg");
         box-sizing: border-box;
         background-size: 100% 100%;
     }
