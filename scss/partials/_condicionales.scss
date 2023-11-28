@@ -149,31 +149,14 @@ $fiesta: "navidad";
         &:hover {
             color: rgb(189, 41, 4);
         }
-    }
-
-    .sechallrs{
-        .fothalemp{
-            display: grid;
-             grid-template-columns: repeat(2, 1fr);
-            grid-gap: 0px; 
+        @media (max-width: 960px) {
+            top: 24%;    
+            left: 45%;   
         }
-        .halfest{
-             max-width: 100%;
-            width: 80rem;
-            height: 20rem;
-
-            @media (max-width: 1199px) {
-                .halfest {
-                   grid-template-columns: repeat(2, 1fr);
-                }
-            }
-        
-             @media (max-width: 576px) {
-                .halfest {
-                    grid-template-columns: repeat(1, 1fr);
-                
-                }
-            } 
+        @media (max-width: 518px) {
+            top: 31%;    
+            left: 35%;   
         }
     }
 }
+

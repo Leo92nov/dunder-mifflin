@@ -75,25 +75,16 @@
 .botonf:hover {
   color: rgb(189, 41, 4);
 }
-
-.sechallrs .fothalemp {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-gap: 0px;
-}
-.sechallrs .halfest {
-  max-width: 100%;
-  width: 80rem;
-  height: 20rem;
-}
-@media (max-width: 1199px) {
-  .sechallrs .halfest .halfest {
-    grid-template-columns: repeat(2, 1fr);
+@media (max-width: 960px) {
+  .botonf {
+    top: 24%;
+    left: 45%;
   }
 }
-@media (max-width: 576px) {
-  .sechallrs .halfest .halfest {
-    grid-template-columns: repeat(1, 1fr);
+@media (max-width: 518px) {
+  .botonf {
+    top: 31%;
+    left: 35%;
   }
 }
 
@@ -183,12 +174,27 @@
 .divimgw {
   width: 100%;
 }
+.divimgw .imgfondoresponsive {
+  display: none;
+}
+@media (max-width: 993px) {
+  .divimgw .imgfondoresponsive {
+    display: block;
+    width: 100%;
+  }
+}
 .divimgw .imgfondo {
+  display: block;
   width: 100%;
   height: 33rem;
   padding: 0%;
   margin: 0;
   position: relative;
+}
+@media (max-width: 993px) {
+  .divimgw .imgfondo {
+    display: none;
+  }
 }
 @keyframes girardund {
   0% {
@@ -212,8 +218,13 @@
   height: 250px;
   position: absolute;
   top: 12%;
-  left: 3%;
+  left: 8%;
   animation: girardund 4s linear infinite;
+}
+@media (max-width: 993px) {
+  .divimgw .dunderley .dunderred {
+    display: none;
+  }
 }
 .divimgw .dunderley .leyendalogo {
   font-size: "2rem";
@@ -225,30 +236,8 @@
   font-weight: bold;
 }
 @media (max-width: 993px) {
-  .divimgw {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-  }
-  .divimgw .dunderley .dunderred {
-    width: 450px;
-    height: 250px;
-    position: absolute;
-    top: 12%;
-    left: 50%;
-    transform: translateX(-50%);
-  }
   .divimgw .dunderley .leyendalogo {
-    font-size: 1.5rem;
-    font-family: "miss-antonia";
-    color: #000000;
-    position: absolute;
-    top: 41%;
-    left: 50%;
-    transform: translateX(-50%);
-    font-weight: bold;
-    margin: 0%;
+    display: none;
   }
 }
 
@@ -407,6 +396,7 @@
   background-position: center center;
 }
 .formulario .form {
+  font-family: "miss-antonia";
   display: flex;
   justify-content: center;
   align-items: center;
@@ -454,6 +444,20 @@
   outline: none;
   border: #000000;
   margin: 1px;
+}
+.formulario .form .formcontainer .formsend:hover {
+  background-image: linear-gradient(90deg, rgb(15, 179, 0) 0%, rgb(86, 175, 78) 64%, rgb(108, 143, 110) 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  transform: scale(1.1);
+}
+.formulario .form .formcontainer .formcancel:hover {
+  background-image: linear-gradient(90deg, rgb(255, 30, 0) 0%, rgb(247, 113, 113) 64%, rgb(255, 189, 189) 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  transform: scale(1.1);
 }
 
 .input {
@@ -742,13 +746,28 @@
   height: 20rem;
 }
 @media (max-width: 1199px) {
-  .sechallrs .halfest .halfest {
+  .sechallrs {
     grid-template-columns: repeat(2, 1fr);
   }
 }
 @media (max-width: 576px) {
-  .sechallrs .halfest .halfest {
-    grid-template-columns: repeat(1, 1fr);
+  .sechallrs .slider {
+    aspect-ratio: 10/50;
+    width: 100%;
+    position: relative;
+    display: flex;
+    overflow: scroll;
+    scroll-snap-type: x mandatory;
+    margin: 0;
+    padding: 0;
+    height: 350px;
+  }
+  .sechallrs .hallslide {
+    width: 500px;
+    position: sticky;
+    object-fit: cover;
+    scroll-snap-align: center;
+    border-radius: 15px;
   }
 }
 
