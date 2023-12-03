@@ -460,20 +460,42 @@
     justify-content: center;
     font-size: $h1size;
     font-family: $primary-font;
+    margin-top: 2%;
   }
   .snp{
-    font-family: sans-serif
+    font-family: sans-serif;
+    margin-left: $pmargin;
+    width: $pdefaultwidth;
+
   }  
   .dunderstaff{
-    width: 100%;
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 5%;
     }
 .misionvision{
     font-family: $primary-font;
-    .mision{
-        font-family: sans-serif;
+        .mision{
+            font-family: $primary-font;
+            display: flex;
+            justify-content: center;
         }
         .vision{
-          font-family: sans-serif;
+            font-family: $primary-font;
+            display: flex;
+            justify-content: center;
+        }
+        .misionp{
+            width: $pdefaultwidth;
+            margin-left: $pmargin;
+            font-family: sans-serif;
+        }
+        .visionp{
+            width: $pdefaultwidth;
+            margin-left: $pmargin;
+            font-family: sans-serif;
         }
 }
 .bodyrs{
@@ -507,14 +529,14 @@
             width: 50%;
             height: 28rem;
             padding: 0;
-            margin: 0;
+            margin: 1rem;
             justify-content: flex-start;
         }
         .headsup{
             width: 50%;
             height: 28rem;
             padding: 0;
-            margin: 0;
+            margin: 1rem;
             justify-content: flex-end;
         }
         @media (max-width: 1210px) {
@@ -540,17 +562,20 @@
                 width: 100%;
                 height: 24rem;
                 padding: 0;
-                margin: 0;
+                margin: 0.5rem;
             }
         }
         
     }
 }
 .precsoc {
+    width: $pdefaultwidth;
     font-family: $primary-font;
     font-size: 1.5rem;
     display: flex;
     justify-content: center;
+    margin-left: 10%;
+
 }
 .pepe {
     position: static;
@@ -572,9 +597,9 @@
         box-sizing: border-box;
 
         .dund {
-            width: 33.33%;
+            width: 32%;
             box-sizing: border-box;
-            margin: 0;
+            margin: 0.5%;
             padding: 0;
             height: 10rem;
 
@@ -602,26 +627,29 @@
     display: flex;
     flex-direction: column;
     width: 100%;
-    align-items: flex-start;
+    align-items: center;
     position: relative;
 
     .ifdund {
         display: flex;
         flex-direction: column;
-        width: 100%;
+        justify-content: center;
+        align-items: center;
+        width: 98%;
+        margin-right: 1%;
         max-width: 100%;
-        height: 480px;
-
+        height: 500px;
         @media (max-width: 1210px) {
             position: relative;
             bottom: auto;
         }
     }
 
-    .listad {
+    .listaganadores {
         display: flex;
         flex-direction: column;
         width: 100%;
+        margin-left: 5%;
         padding: 0;
         font-size: 2rem;
         font-family: $primary-font;
@@ -649,15 +677,15 @@
     .fothalemp {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
-        grid-gap: 0px; 
+        grid-gap: 4px; 
+        margin-right: 1%;
     }
 
     .halfest {
-        max-width: 100%;
+        max-width: 98%;
         width: 80rem;
         height: 20rem;
-
-
+        margin-left: 1%;
     }
     @media (max-width: 1199px) {
         grid-template-columns: repeat(2, 1fr);
@@ -685,4 +713,8 @@
         } 
     }
 }
-
+.burga{
+    color: #fff;
+    width: 70px;
+    height: 40px;
+}
