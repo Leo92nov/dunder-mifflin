@@ -80,16 +80,24 @@ $fiesta: "navidad";
       background-image: url("../assets//img/navidad_dunder.jpg");
     }
   
-    .banerof{
+    .banerof {
         width: 100%;
+        margin: 2rem 0rem 0rem 0rem;
         height: 8rem;
         display: flex;
         justify-content: center;
         align-items: center;
-        background-image: url("../assets//img/navbaner.jpg");
+        background-image: url("../assets/img/navbaner.jpg");
         box-sizing: border-box;
         background-size: 100% 100%;
-    }
+        background-color: #fff;
+      
+        @media (max-width: 450px) {
+            width: 100%;
+            background-image: url("../assets/img/asdasd.jpg");
+            box-sizing: border-box;
+        }
+      }
     .titfiesta {
         color: rgb(255, 38, 0);
         font-size: 4rem;

@@ -5,13 +5,22 @@
 
 .banerof {
   width: 100%;
+  margin: 2rem 0rem 0rem 0rem;
   height: 8rem;
   display: flex;
   justify-content: center;
   align-items: center;
-  background-image: url("../assets//img/navbaner.jpg");
+  background-image: url("../assets/img/navbaner.jpg");
   box-sizing: border-box;
   background-size: 100% 100%;
+  background-color: #fff;
+}
+@media (max-width: 450px) {
+  .banerof {
+    width: 100%;
+    background-image: url("../assets/img/asdasd.jpg");
+    box-sizing: border-box;
+  }
 }
 
 .titfiesta {
@@ -105,8 +114,13 @@
   min-height: 100vh;
   margin: 0;
   padding: 0%;
-  background-color: rgb(172, 177, 180);
+  background-color: rgb(255, 255, 255);
   overflow-x: hidden;
+}
+@media (max-width: 993px) {
+  .bodyi {
+    overflow-x: hidden;
+  }
 }
 
 #top {
@@ -170,6 +184,12 @@
   color: transparent;
   transform: scale(1.1);
 }
+@media (max-width: 576px) {
+  #top {
+    width: 100%;
+    overflow-x: hidden;
+  }
+}
 
 .divimgw {
   width: 100%;
@@ -181,6 +201,8 @@
   .divimgw .imgfondoresponsive {
     display: block;
     width: 100%;
+    overflow-x: hidden;
+    margin-bottom: 0.5rem;
   }
 }
 .divimgw .imgfondo {
@@ -188,12 +210,13 @@
   width: 100%;
   height: 33rem;
   padding: 0%;
-  margin: 0;
+  margin-bottom: 0.5rem;
   position: relative;
 }
 @media (max-width: 993px) {
   .divimgw .imgfondo {
     display: none;
+    overflow-x: hidden;
   }
 }
 @keyframes girardund {
@@ -224,6 +247,7 @@
 @media (max-width: 993px) {
   .divimgw .dunderley .dunderred {
     display: none;
+    overflow-x: hidden;
   }
 }
 .divimgw .dunderley .leyendalogo {
@@ -238,6 +262,7 @@
 @media (max-width: 993px) {
   .divimgw .dunderley .leyendalogo {
     display: none;
+    overflow-x: hidden;
   }
 }
 
@@ -246,10 +271,15 @@
   flex-wrap: wrap;
   margin: 0;
 }
+@media (max-width: 993px) {
+  .galeria {
+    overflow-x: hidden;
+  }
+}
 .galeria .fotogaleria {
-  width: 20%;
+  width: 19.8%;
   height: auto;
-  margin-bottom: 0%;
+  margin: 0 0.1% 0.5rem 0.1%;
   object-fit: cover;
   box-sizing: border-box;
   margin-top: 0;
@@ -263,6 +293,11 @@
   box-sizing: border-box;
   background-size: 100% 100%;
   height: 600px;
+}
+@media (max-width: 993px) {
+  .contenedorf {
+    overflow-x: hidden;
+  }
 }
 
 .footer {
@@ -309,6 +344,11 @@
   -webkit-background-clip: text;
   color: transparent;
   transform: scale(1.1);
+}
+@media (max-width: 993px) {
+  .footer {
+    overflow-x: hidden;
+  }
 }
 
 .contac {
@@ -384,6 +424,11 @@
     padding: 0;
   }
 }
+@media (max-width: 320px) {
+  .formtitle {
+    color: #ffffff;
+  }
+}
 
 .formulario {
   height: 38rem;
@@ -395,6 +440,16 @@
   background-repeat: no-repeat;
   background-size: auto;
   background-position: center center;
+}
+@media (max-width: 600px) {
+  .formulario {
+    background-size: contain;
+  }
+}
+@media (max-width: 533px) {
+  .formulario {
+    background-image: url(../assets/img/form_sm.png);
+  }
 }
 .formulario .form {
   font-family: "miss-antonia";
@@ -418,9 +473,13 @@
     position: static;
   }
 }
+@media (max-width: 600px) {
+  .formulario .form {
+    background-size: contain;
+  }
+}
 .formulario .form .formcontainer {
   width: 100%;
-  /*  border: 2px solid #000000; */
   border-radius: 1rem;
   background-image: url(../assets/img/);
   background-size: cover;
@@ -440,25 +499,42 @@
     padding: 0;
   }
 }
-.formulario .form .formcontainer .forminput {
-  font-size: 1rem;
-  outline: none;
-  border: #000000;
-  margin: 1px;
+@media (max-width: 600px) {
+  .formulario .form .formcontainer .formcontainer {
+    background-size: contain;
+  }
 }
-.formulario .form .formcontainer .formsend:hover {
-  background-image: linear-gradient(90deg, rgb(15, 179, 0) 0%, rgb(86, 175, 78) 64%, rgb(108, 143, 110) 100%);
-  background-clip: text;
-  -webkit-background-clip: text;
-  color: transparent;
-  transform: scale(1.1);
+@media (max-width: 600px) and (max-width: 450px) {
+  .formulario .form .formcontainer {
+    padding-bottom: 5rem;
+  }
 }
-.formulario .form .formcontainer .formcancel:hover {
-  background-image: linear-gradient(90deg, rgb(255, 30, 0) 0%, rgb(247, 113, 113) 64%, rgb(255, 189, 189) 100%);
-  background-clip: text;
-  -webkit-background-clip: text;
-  color: transparent;
-  transform: scale(1.1);
+@media (max-width: 600px) and (max-width: 320px) {
+  .formulario .form .formcontainer {
+    padding-bottom: 5.4rem;
+  }
+}
+@media (max-width: 600px) {
+  .formulario .form .formcontainer .forminput {
+    font-size: 1rem;
+    outline: none;
+    border: #000000;
+    margin: 1px;
+  }
+  .formulario .form .formcontainer .formsend:hover {
+    background-image: linear-gradient(90deg, rgb(15, 179, 0) 0%, rgb(86, 175, 78) 64%, rgb(108, 143, 110) 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    transform: scale(1.1);
+  }
+  .formulario .form .formcontainer .formcancel:hover {
+    background-image: linear-gradient(90deg, rgb(255, 30, 0) 0%, rgb(247, 113, 113) 64%, rgb(255, 189, 189) 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    transform: scale(1.1);
+  }
 }
 
 .input {
@@ -598,6 +674,16 @@
   overflow-x: hidden;
   box-sizing: content-box;
 }
+@media (max-width: 993px) {
+  .bodyrs {
+    overflow-x: hidden;
+  }
+}
+@media (max-width: 576px) {
+  .bodyrs {
+    overflow-x: hidden;
+  }
+}
 
 .titrecsoch1 {
   font-family: "miss-antonia";
@@ -663,6 +749,11 @@
     margin: 0.5rem;
   }
 }
+@media (max-width: 576px) {
+  .sectionsoc1 {
+    overflow-x: hidden;
+  }
+}
 
 .precsoc {
   width: 80%;
@@ -712,6 +803,11 @@
     width: 100%;
   }
 }
+@media (max-width: 576px) {
+  .secdund {
+    overflow-x: hidden;
+  }
+}
 
 .contdundies {
   display: flex;
@@ -740,7 +836,7 @@
   display: flex;
   flex-direction: column;
   width: 100%;
-  margin-left: 5%;
+  margin-left: 8%;
   padding: 0;
   font-size: 2rem;
   font-family: "miss-antonia";
@@ -749,6 +845,11 @@
 @media (max-width: 1210px) {
   .contdundies .listaganadores {
     margin-top: 20px;
+  }
+}
+@media (max-width: 576px) {
+  .contdundies {
+    overflow-x: hidden;
   }
 }
 
@@ -798,6 +899,11 @@
     object-fit: cover;
     scroll-snap-align: center;
     border-radius: 15px;
+  }
+}
+@media (max-width: 576px) {
+  .sechallrs {
+    overflow-x: hidden;
   }
 }
 
