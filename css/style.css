@@ -1,30 +1,46 @@
-/* HALLOWEEN */
-.contenedorf {
-  background-image: url("../assets//img/navidad_dunder.jpg");
+.titulo-1 {
+  font-size: 3.3rem;
+  font-family: "miss-antonia";
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.banerof {
+.titulo-2 {
+  font-size: 1.65rem;
+  font-family: "miss-antonia";
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* HALLOWEEN */
+.contenedorf {
+  background-image: url("../assets//img/Index/navidad_dunder.jpg");
+  height: 700px;
+}
+@media (max-width: 700px) {
+  .contenedorf {
+    height: 600px;
+  }
+}
+
+.banerf {
   width: 100%;
   margin: 2rem 0rem 0rem 0rem;
   height: 8rem;
   display: flex;
   justify-content: center;
   align-items: center;
-  background-image: url("../assets/img/navbaner.jpg");
+  background-image: url("../assets/img/Index/navbaner.jpg");
   box-sizing: border-box;
   background-size: 100% 100%;
   background-color: #fff;
 }
-@media (max-width: 450px) {
-  .banerof {
-    width: 100%;
-    background-image: url("../assets/img/banerresponsive.jpg");
-    box-sizing: border-box;
-    height: 12rem;
-  }
-}
 
-.titfiesta {
+.banerf__titulo {
   color: rgb(255, 38, 0);
   font-size: 4rem;
   font-family: "kaushan", sans-serif;
@@ -61,7 +77,7 @@
   }
 }
 
-.textosuperpuesto {
+.contenedorf__texto {
   position: absolute;
   color: rgb(8, 53, 3);
   top: 10%;
@@ -81,9 +97,33 @@
   color: rgb(10, 66, 3);
   font-weight: bold;
   text-decoration: none;
+  animation: botonf 2s infinite;
 }
-.botonf:hover {
-  color: rgb(189, 41, 4);
+@keyframes botonf {
+  0% {
+    color: rgb(255, 0, 0);
+  }
+  13% {
+    color: rgb(221, 54, 12);
+  }
+  25% {
+    color: rgb(255, 136, 0);
+  }
+  38% {
+    color: rgb(19, 85, 11);
+  }
+  50% {
+    color: rgb(13, 77, 6);
+  }
+  68% {
+    color: rgb(19, 85, 11);
+  }
+  80% {
+    color: rgb(255, 136, 0);
+  }
+  100% {
+    color: rgb(221, 54, 12);
+  }
 }
 @media (max-width: 960px) {
   .botonf {
@@ -98,22 +138,68 @@
   }
 }
 
-.titulo-1 {
-  font-size: 3.3rem;
-  font-family: "miss-antonia";
-  text-align: center;
+.halloweenrecsoc {
+  display: none;
+}
+
+.mesnavi {
+  font-size: 2rem;
+  margin-top: 2rem;
+  color: green;
   display: flex;
+  flex-flow: row nowrap;
   justify-content: center;
   align-items: center;
 }
 
-.titulo-2 {
-  font-size: 1.65rem;
-  font-family: "miss-antonia";
-  text-align: center;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+.secnavidad {
+  margin-bottom: 2rem;
+}
+.secnavidad .fotnavidad {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 4px;
+  margin-right: 1%;
+}
+.secnavidad .navifest {
+  max-width: 98%;
+  width: 80rem;
+  height: 20rem;
+  margin-left: 1%;
+}
+@media (max-width: 1199px) {
+  .secnavidad {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (max-width: 576px) {
+  .secnavidad .slider {
+    aspect-ratio: 10/50;
+    width: 100%;
+    position: relative;
+    display: flex;
+    overflow: scroll;
+    scroll-snap-type: x mandatory;
+    margin: 0;
+    padding: 0;
+    height: 350px;
+  }
+  .secnavidad .navislide {
+    width: 500px;
+    position: sticky;
+    object-fit: cover;
+    scroll-snap-align: center;
+    border-radius: 15px;
+  }
+}
+@media (max-width: 576px) {
+  .secnavidad {
+    overflow-x: hidden;
+  }
+}
+
+.sechallrs {
+  display: none;
 }
 
 @font-face {
@@ -215,18 +301,18 @@
 .divimgw {
   width: 100%;
 }
-.divimgw .imgfondoresponsive {
+.divimgw .divimgw__imgfondoresponsive {
   display: none;
 }
 @media (max-width: 993px) {
-  .divimgw .imgfondoresponsive {
+  .divimgw .divimgw__imgfondoresponsive {
     display: block;
     width: 100%;
     overflow-x: hidden;
     margin-bottom: 0.5rem;
   }
 }
-.divimgw .imgfondo {
+.divimgw .divimgw__imgfondo {
   display: block;
   width: 100%;
   height: 33rem;
@@ -235,7 +321,7 @@
   position: relative;
 }
 @media (max-width: 993px) {
-  .divimgw .imgfondo {
+  .divimgw .divimgw__imgfondo {
     display: none;
     overflow-x: hidden;
   }
@@ -257,7 +343,7 @@
     transform: rotate(0deg);
   }
 }
-.divimgw .dunderley .dunderred {
+.divimgw .dunderley .dunderley__simbolo {
   width: 450px;
   height: 250px;
   position: absolute;
@@ -266,12 +352,12 @@
   animation: girardund 4s linear infinite;
 }
 @media (max-width: 993px) {
-  .divimgw .dunderley .dunderred {
+  .divimgw .dunderley .dunderley__simbolo {
     display: none;
     overflow-x: hidden;
   }
 }
-.divimgw .dunderley .leyendalogo {
+.divimgw .dunderley .dunderley__leyendalogo {
   font-size: "2rem";
   font-family: "miss-antonia";
   color: #000000;
@@ -281,7 +367,7 @@
   font-weight: bold;
 }
 @media (max-width: 993px) {
-  .divimgw .dunderley .leyendalogo {
+  .divimgw .dunderley .dunderley__leyendalogo {
     display: none;
     overflow-x: hidden;
   }
@@ -297,7 +383,7 @@
     overflow-x: hidden;
   }
 }
-.galeria .fotogaleria {
+.galeria .galeria__foto {
   width: 19.8%;
   height: auto;
   margin: 0 0.1% 0.5rem 0.1%;
@@ -390,11 +476,11 @@
   flex-direction: row;
   height: 32rem;
 }
-.oficina .office {
+.oficina .foto__oficina {
   width: 50%;
 }
 @media (max-width: 993px) {
-  .oficina .office {
+  .oficina .foto__oficina {
     width: 100%;
     flex-direction: column;
     height: 32rem;
@@ -406,7 +492,7 @@
     height: auto;
   }
 }
-.oficina .mapa {
+.oficina .mapa__oficina {
   display: flex;
   flex-direction: column;
   min-width: 50%;
@@ -414,31 +500,9 @@
   margin: 0;
 }
 @media (max-width: 993px) {
-  .oficina .mapa {
+  .oficina .mapa__oficina {
     flex-direction: column;
     height: 32rem;
-  }
-}
-
-.formtitle {
-  display: flex;
-  font-size: "1.7rem";
-  font-family: "miss-antonia";
-  justify-content: center;
-}
-@media (max-width: 993px) {
-  .formtitle {
-    display: flex;
-    flex-flow: row nowrap;
-    justify-content: center;
-    align-items: center;
-    margin: 0%;
-    padding: 0;
-  }
-}
-@media (max-width: 320px) {
-  .formtitle {
-    color: #ffffff;
   }
 }
 
@@ -448,7 +512,7 @@
   flex-flow: column nowrap;
   justify-content: center;
   align-items: center;
-  background-image: url(../assets/img/papiro.png);
+  background-image: url(../assets/img/contacto/papiro.png);
   background-repeat: no-repeat;
   background-size: auto;
   background-position: center center;
@@ -460,13 +524,35 @@
 }
 @media (max-width: 533px) {
   .formulario {
-    background-image: url(../assets/img/form_sm.png);
+    background-image: url(../assets/img/contacto/form_sm.png);
   }
 }
-.formulario .form {
+.formulario .formulario__titulo {
+  display: flex;
+  font-size: "1.7rem";
+  font-family: "miss-antonia";
+  justify-content: center;
+}
+@media (max-width: 993px) {
+  .formulario .formulario__titulo {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+    margin: 0%;
+    padding: 0;
+  }
+}
+@media (max-width: 320px) {
+  .formulario .formulario__titulo {
+    color: #ffffff;
+  }
+}
+
+.contactoform {
   font-family: "miss-antonia";
   display: flex;
-  flex-flow: row nowrap;
+  flex-flow: column nowrap;
   justify-content: center;
   align-items: center;
   width: 100%;
@@ -476,7 +562,7 @@
   margin-bottom: 2rem;
 }
 @media (max-width: 993px) {
-  .formulario .form {
+  .contactoform {
     max-width: 20rem;
     display: flex;
     flex-flow: row nowrap;
@@ -489,11 +575,11 @@
   }
 }
 @media (max-width: 600px) {
-  .formulario .form {
+  .contactoform {
     background-size: contain;
   }
 }
-.formulario .form .formcontainer {
+.contactoform .formcontainer {
   width: 100%;
   border-radius: 1rem;
   background-image: url(../assets/img/);
@@ -507,7 +593,7 @@
   text-align: left;
 }
 @media (max-width: 993px) {
-  .formulario .form .formcontainer {
+  .contactoform .formcontainer {
     display: flex;
     flex-flow: column nowrap;
     justify-content: center;
@@ -517,41 +603,39 @@
   }
 }
 @media (max-width: 600px) {
-  .formulario .form .formcontainer .formcontainer {
+  .contactoform .formcontainer .formcontainer {
     background-size: contain;
   }
 }
-@media (max-width: 600px) and (max-width: 450px) {
-  .formulario .form .formcontainer {
+@media (max-width: 450px) {
+  .contactoform .formcontainer {
     padding-bottom: 5rem;
   }
 }
-@media (max-width: 600px) and (max-width: 320px) {
-  .formulario .form .formcontainer {
+@media (max-width: 320px) {
+  .contactoform .formcontainer {
     padding-bottom: 5.4rem;
   }
 }
-@media (max-width: 600px) {
-  .formulario .form .formcontainer .forminput {
-    font-size: 1rem;
-    outline: none;
-    border: #000000;
-    margin: 1px;
-  }
-  .formulario .form .formcontainer .formsend:hover {
-    background-image: linear-gradient(90deg, rgb(15, 179, 0) 0%, rgb(86, 175, 78) 64%, rgb(108, 143, 110) 100%);
-    background-clip: text;
-    -webkit-background-clip: text;
-    color: transparent;
-    transform: scale(1.1);
-  }
-  .formulario .form .formcontainer .formcancel:hover {
-    background-image: linear-gradient(90deg, rgb(255, 30, 0) 0%, rgb(247, 113, 113) 64%, rgb(255, 189, 189) 100%);
-    background-clip: text;
-    -webkit-background-clip: text;
-    color: transparent;
-    transform: scale(1.1);
-  }
+.contactoform .formcontainer .formcontainer__forminput {
+  font-size: 1rem;
+  outline: none;
+  border: #000000;
+  margin: 1px;
+}
+.contactoform .formcontainer .formcontainer__formsend:hover {
+  background-image: linear-gradient(90deg, rgb(15, 179, 0) 0%, rgb(86, 175, 78) 64%, rgb(108, 143, 110) 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  transform: scale(1.1);
+}
+.contactoform .formcontainer .formcontainer__formcancel:hover {
+  background-image: linear-gradient(90deg, rgb(255, 30, 0) 0%, rgb(247, 113, 113) 64%, rgb(255, 189, 189) 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  transform: scale(1.1);
 }
 
 .input {
@@ -655,7 +739,7 @@
   }
 }
 
-.snp {
+.sobrenosotros__p {
   font-family: sans-serif;
   margin-left: 10%;
   width: 80%;
@@ -670,13 +754,13 @@
   margin: 5%;
 }
 
-.misionp {
+.snmv__mision {
   width: 80%;
   margin-left: 10%;
   font-family: sans-serif;
 }
 
-.visionp {
+.snmv__vision {
   width: 80%;
   margin-left: 10%;
   font-family: sans-serif;
@@ -697,6 +781,14 @@
   }
 }
 
+.precsoc {
+  font-family: "miss-antonia";
+  width: 85%;
+  margin: 0 auto;
+  font-size: 1.3rem;
+  line-height: 1.5;
+}
+
 .sectionsoc1 {
   display: flex;
   width: 100%;
@@ -707,18 +799,18 @@
   flex-flow: row;
   width: 100%;
 }
-.sectionsoc1 .rowrs .diversi-container {
+.sectionsoc1 .rowrs .divercontainer {
   display: flex;
   width: 100%;
 }
-.sectionsoc1 .rowrs .diversity {
+.sectionsoc1 .rowrs .divercontainer__diversidad {
   width: 50%;
   height: 28rem;
   padding: 0;
   margin: 1rem;
   justify-content: flex-start;
 }
-.sectionsoc1 .rowrs .headsup {
+.sectionsoc1 .rowrs .divercontainer__headsup {
   width: 50%;
   height: 28rem;
   padding: 0;
@@ -736,13 +828,13 @@
     padding: 0;
     overflow-x: hidden;
   }
-  .sectionsoc1 .rowrs .diversi-container {
+  .sectionsoc1 .rowrs .divercontainer {
     display: flex;
-    width: 100%;
+    min-width: 100%;
     flex-direction: column;
   }
-  .sectionsoc1 .rowrs .diversity,
-  .sectionsoc1 .rowrs .headsup {
+  .sectionsoc1 .rowrs .divercontainer__diversidad,
+  .sectionsoc1 .rowrs .divercontainer__headsup {
     width: 100%;
     height: 24rem;
     padding: 0;
@@ -755,17 +847,16 @@
   }
 }
 
-.precsoc {
+.dundies {
+  position: static;
+}
+.dundies .dundies__premiacion {
   width: 80%;
   font-family: "miss-antonia";
-  font-size: 1.2rem;
+  font-size: 1.3rem;
   display: flex;
   justify-content: center;
   margin-left: 10%;
-}
-
-.pepe {
-  position: static;
 }
 
 .secdund {
@@ -782,14 +873,14 @@
   width: 100%;
   box-sizing: border-box;
 }
-.secdund .dundiesbar .dund {
+.secdund .dundiesbar .dundiesbar__foto {
   width: 32%;
   box-sizing: border-box;
   margin: 0.5%;
   padding: 0;
   height: 10rem;
 }
-.secdund .dundiesbar .dund img {
+.secdund .dundiesbar .dundiesbar__foto img {
   width: 100%;
   height: 10rem;
   object-fit: cover;
@@ -809,14 +900,14 @@
   }
 }
 
-.contdundies {
+.dundiespresentacion {
   display: flex;
   flex-direction: column;
   width: 100%;
   align-items: center;
   position: relative;
 }
-.contdundies .ifdund {
+.dundiespresentacion .dundiespresentacion_anfitriones {
   display: flex;
   flex-flow: column nowrap;
   justify-content: center;
@@ -827,29 +918,40 @@
   height: 500px;
 }
 @media (max-width: 1210px) {
-  .contdundies .ifdund {
+  .dundiespresentacion .dundiespresentacion_anfitriones {
     position: relative;
     bottom: auto;
+    height: 400px;
   }
 }
-.contdundies .listaganadores {
+@media (max-width: 400px) {
+  .dundiespresentacion .dundiespresentacion_anfitriones {
+    position: relative;
+    bottom: auto;
+    height: 200px;
+  }
+}
+.dundiespresentacion .ganadores {
+  margin-top: 2rem;
+}
+.dundiespresentacion .listaganadores {
   display: flex;
   flex-flow: column nowrap;
   justify-content: flex-start;
   align-items: flex-start;
   width: 100%;
   padding: 0;
-  font-size: 1.2rem;
+  font-size: 1.3rem;
   font-family: "miss-antonia";
   line-height: 2;
 }
 @media (max-width: 1210px) {
-  .contdundies .listaganadores {
+  .dundiespresentacion .listaganadores {
     margin-top: 20px;
   }
 }
 @media (max-width: 576px) {
-  .contdundies {
+  .dundiespresentacion {
     overflow-x: hidden;
   }
 }
@@ -859,49 +961,6 @@
     flex-direction: column;
   }
 }
-.sechallrs .fothalemp {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-gap: 4px;
-  margin-right: 1%;
-}
-.sechallrs .halfest {
-  max-width: 98%;
-  width: 80rem;
-  height: 20rem;
-  margin-left: 1%;
-}
-@media (max-width: 1199px) {
-  .sechallrs {
-    grid-template-columns: repeat(2, 1fr);
-  }
-}
-@media (max-width: 576px) {
-  .sechallrs .slider {
-    aspect-ratio: 10/50;
-    width: 100%;
-    position: relative;
-    display: flex;
-    overflow: scroll;
-    scroll-snap-type: x mandatory;
-    margin: 0;
-    padding: 0;
-    height: 350px;
-  }
-  .sechallrs .hallslide {
-    width: 500px;
-    position: sticky;
-    object-fit: cover;
-    scroll-snap-align: center;
-    border-radius: 15px;
-  }
-}
-@media (max-width: 576px) {
-  .sechallrs {
-    overflow-x: hidden;
-  }
-}
-
 .burga {
   color: #fff;
   width: 70px;

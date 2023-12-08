@@ -4,7 +4,7 @@ $fiesta: "navidad";
 
 @if ($fiesta == "halloween") {
     .contenedorf {
-        background-image: url("../assets/img/Halloween.jpg");
+        background-image: url("../assets/img/Index/Halloween.jpg");
     }
     .banerof{
         width: 100%;
@@ -12,7 +12,7 @@ $fiesta: "navidad";
         display: flex;
         justify-content: center;
         align-items: center;
-        background-image: url("../assets/img/halloweenbaner.jpg");
+        background-image: url("../assets/img/Index/halloweenbaner.jpg");
         box-sizing: border-box;
         background-size: 100% 100%;
         border: 2px solid;
@@ -46,8 +46,8 @@ $fiesta: "navidad";
         font-weight: bold;
         &:hover {
             color: rgb(189, 102, 4);
-            
         }
+        
         @media (max-width: 1367px) {
             top: 61%;    
             left: 49%;   
@@ -70,6 +70,53 @@ $fiesta: "navidad";
             left: 35%;   
         }
     }
+    .sechallrs {
+
+        .fothalemp {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-gap: 4px; 
+            margin-right: 1%;
+        }
+    
+        .halfest {
+            max-width: 98%;
+            width: 80rem;
+            height: 20rem;
+            margin-left: 1%;
+        }
+        @media (max-width: 1199px) {
+            grid-template-columns: repeat(2, 1fr);
+        }
+        
+        @media (max-width: 576px) {
+            .slider {
+                aspect-ratio: 10/50;
+                width: 100%;
+                position: relative;
+                display: flex;
+                overflow: scroll;
+                scroll-snap-type: x mandatory;
+                margin: 0;
+                padding: 0;
+                height: 350px;
+            }
+    
+            .hallslide {
+                width: 500px;
+                position: sticky;
+                object-fit: cover;
+                scroll-snap-align: center;
+                border-radius: 15px;
+            } 
+        }
+        @media (max-width: 576px) {
+            overflow-x: hidden;
+        }
+    }
+    .navidadrecsoc{
+        display: none;
+    }
 } 
 
 
@@ -77,29 +124,27 @@ $fiesta: "navidad";
 
 @else if($fiesta == "navidad") {
     .contenedorf {
-      background-image: url("../assets//img/navidad_dunder.jpg");
+      background-image: url("../assets//img/Index/navidad_dunder.jpg");
+      height: 700px;
+      @media (max-width: 700px) {
+        height: 600px;
+      }
     }
   
-    .banerof {
+    .banerf {
         width: 100%;
         margin: 2rem 0rem 0rem 0rem;
         height: 8rem;
         display: flex;
         justify-content: center;
         align-items: center;
-        background-image: url("../assets/img/navbaner.jpg");
+        background-image: url("../assets/img/Index/navbaner.jpg");
         box-sizing: border-box;
         background-size: 100% 100%;
         background-color: #fff;
-      
-        @media (max-width: 450px) {
-            width: 100%;
-            background-image: url("../assets/img/banerresponsive.jpg");
-            box-sizing: border-box;
-            height: 12rem;
-        }
       }
-    .titfiesta {
+
+    .banerf__titulo {
         color: rgb(255, 38, 0);
         font-size: 4rem;
         font-family: 'kaushan', sans-serif;
@@ -136,7 +181,7 @@ $fiesta: "navidad";
             }
         }
     }
-    .textosuperpuesto {
+    .contenedorf__texto {
       position: absolute;
       color: rgb(8, 53, 3);
       top: 10%;
@@ -155,8 +200,33 @@ $fiesta: "navidad";
         color: rgb(10, 66, 3);
         font-weight: bold;
         text-decoration: none;
-        &:hover {
-            color: rgb(189, 41, 4);
+        animation: botonf 2s infinite;
+
+        @keyframes botonf{
+            0% {
+                color: rgb(255, 0, 0);
+            }
+            13% {
+                color: rgb(221, 54, 12);
+            }
+            25% {
+                color: rgb(255, 136, 0);
+            }
+            38% {
+                color: rgb(19, 85, 11);
+            }
+            50% {
+                color: rgb(13, 77, 6);
+            }
+            68% {
+                color: rgb(19, 85, 11);
+            }
+            80% {
+                color: rgb(255, 136, 0);
+            }
+            100% {
+                color: rgb(221, 54, 12);
+            }
         }
         @media (max-width: 960px) {
             top: 24%;    
@@ -167,5 +237,64 @@ $fiesta: "navidad";
             left: 35%;   
         }
     }
-}
+    .halloweenrecsoc{
+        display: none;
+    }
 
+    .mesnavi{
+        font-size: 2rem;
+        margin-top: 2rem;
+        color: green;
+        @include flex(flex, row, nowrap, center, center);
+
+    }
+    .secnavidad {
+        margin-bottom: 2rem;
+        .fotnavidad{
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-gap: 4px; 
+            margin-right: 1%;
+        }
+
+        .navifest{
+            max-width: 98%;
+            width: 80rem;
+            height: 20rem;
+            margin-left: 1%; 
+        }
+
+        @media (max-width: 1199px) {
+            grid-template-columns: repeat(2, 1fr);
+        }
+        
+        @media (max-width: 576px) {
+            .slider {
+                aspect-ratio: 10/50;
+                width: 100%;
+                position: relative;
+                display: flex;
+                overflow: scroll;
+                scroll-snap-type: x mandatory;
+                margin: 0;
+                padding: 0;
+                height: 350px;
+            }
+            
+            .navislide{
+                width: 500px;
+                position: sticky;
+                object-fit: cover;
+                scroll-snap-align: center;
+                border-radius: 15px;
+            }
+        }
+        @media (max-width: 576px) {
+            overflow-x: hidden;
+        }
+    }
+    .sechallrs{
+        display: none;
+    }
+    
+}

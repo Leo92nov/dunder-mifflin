@@ -1,8 +1,7 @@
-@import "./partials/_condicionales.scss";
 @import "./partials/variables";
 @import "./partials/bucles";
 @import "./partials/mixins";
-
+@import "./partials/_condicionales.scss";
 
 @font-face {
     font-family: miss-antonia;
@@ -95,7 +94,7 @@
     
     .divimgw {
         width: 100%;
-        .imgfondoresponsive{
+        .divimgw__imgfondoresponsive{
             display: none;
 
             @media (max-width: 993px) {
@@ -106,7 +105,7 @@
             }
         }
         
-        .imgfondo {
+        .divimgw__imgfondo {
             display: block;
             width: 100%;
             height: 33rem;
@@ -137,7 +136,7 @@
     }
 }   
         .dunderley {
-            .dunderred {
+            .dunderley__simbolo {
                 width: 450px;
                 height: 250px;
                 position: absolute;
@@ -150,7 +149,7 @@
                 }
             }
     
-            .leyendalogo {
+            .dunderley__leyendalogo {
                 font-size: $h1size;
                 font-family: $primary-font;
                 color: #000000;
@@ -172,7 +171,7 @@
     @media (max-width: 993px) {
         overflow-x: hidden;
     }
-    .fotogaleria{width: 19.8%; 
+    .galeria__foto{width: 19.8%; 
     height: auto;
     margin: 0 0.1% 0.5rem 0.1%;
     object-fit: cover;
@@ -259,7 +258,7 @@
     display: flex;
     flex-direction: row;
     height: 32rem;
-    .office{
+    .foto__oficina{
         width: 50%;
         @media (max-width: 993px) {
             width: 100%;
@@ -271,7 +270,7 @@
         flex-direction: column;
         height: auto;
     }
-    .mapa {
+    .mapa__oficina {
         display: flex;
         flex-direction: column;
         min-width: 50%;
@@ -283,24 +282,10 @@
         }
     }
 }
-.formtitle{
-    display: flex;
-    font-size: $h2size;
-    font-family: $primary-font;
-    justify-content: center;
-    @media (max-width: 993px) {
-        @include flex (flex, row, nowrap, center, center);
-        margin: 0%;
-        padding: 0;
-    }
-    @media (max-width: 320px) {
-        color: #ffffff;
-    }   
-}
 .formulario{
     height: 38rem;
     @include flex (flex, column, nowrap, center, center);
-    background-image: url(../assets/img/papiro.png);
+    background-image: url(../assets/img/contacto/papiro.png);
     background-repeat: no-repeat;
     background-size: auto; 
     background-position: center center;
@@ -308,28 +293,44 @@
         background-size: contain ;
     }
     @media (max-width: 533px) {
-        background-image: url(../assets/img/form_sm.png);
+        background-image: url(../assets/img/contacto/form_sm.png);
     }
 
-    .form {
+    .formulario__titulo{
+        display: flex;
+        font-size: $h2size;
         font-family: $primary-font;
-        @include flex (flex, row, nowrap, center, center);
-        width: 100%;
-        max-width: 20rem;
-        border-radius: 1rem;
-        display: block;
-        margin-bottom: 2rem; 
+        justify-content: center;
         @media (max-width: 993px) {
-            max-width: 20rem;
             @include flex (flex, row, nowrap, center, center);
-            margin: 0 auto;
-            margin-bottom: 1rem;
+            margin: 0%;
             padding: 0;
-            position: static;
         }
-        @media (max-width: 600px) {
-            background-size: contain ;
+        @media (max-width: 320px) {
+            color: #ffffff;
         }
+    }
+}
+.contactoform {
+    font-family: $primary-font;
+    @include flex (flex, column, nowrap, center, center);
+    width: 100%;
+    max-width: 20rem;
+    border-radius: 1rem;
+    display: block;
+    margin-bottom: 2rem; 
+    @media (max-width: 993px) {
+        max-width: 20rem;
+        @include flex (flex, row, nowrap, center, center);
+        margin: 0 auto;
+        margin-bottom: 1rem;
+        padding: 0;
+        position: static;
+    }
+    @media (max-width: 600px) {
+        background-size: contain ;
+    }
+
         .formcontainer {
             width: 100%;
             border-radius: 1rem;
@@ -349,46 +350,43 @@
             }
             @media (max-width: 600px) {
                 .formcontainer {
-                  background-size: contain;
+                    background-size: contain;
                 }
+            }
             @media (max-width: 450px) {
                 padding-bottom: 5rem;
             }   
             @media (max-width: 320px) {
                 padding-bottom: 5.4rem;
             }   
-
-            .forminput {
+            
+            .formcontainer__forminput {
                 font-size: 1rem;
                 outline: none;
                 border: #000000;
                 margin: 1px;
             }
-            .formsend{
+            .formcontainer__formsend{
                 &:hover {
                     background-image: linear-gradient(90deg, rgb(15, 179, 0) 0%, rgb(86, 175, 78) 64%, rgb(108, 143, 110) 100%);
                     background-clip: text;
                     -webkit-background-clip: text;
                     color: transparent;
                     transform: scale(1.1);
-                    
                 }
             }
-            .formcancel{
+            .formcontainer__formcancel{
                 &:hover {
                     background-image: linear-gradient(90deg, rgb(255, 30, 0) 0%, rgb(247, 113, 113) 64%, rgb(255, 189, 189) 100%);
                     background-clip: text;
                     -webkit-background-clip: text;
                     color: transparent;
                     transform: scale(1.1);
-                
                 }
             }
-            }
-
         }
-    }    
-}
+
+    } 
 .input{
     margin: 5px;
 }
@@ -474,7 +472,7 @@
         }
     }
 }
-  .snp{
+  .sobrenosotros__p{
     font-family: sans-serif;
     margin-left: $pmargin;
     width: $pdefaultwidth;
@@ -486,12 +484,12 @@
     margin: 5%;
     }
 
-    .misionp{
+    .snmv__mision{
         width: $pdefaultwidth;
         margin-left: $pmargin;
         font-family: sans-serif;
     }
-    .visionp{
+    .snmv__vision{
         width: $pdefaultwidth;
         margin-left: $pmargin;
         font-family: sans-serif;
@@ -508,6 +506,14 @@
     }
 }
 
+.precsoc {
+    font-family: $primary-font;
+    width: 85%;
+    margin: 0 auto; 
+    font-size: 1.3rem;
+    line-height: 1.5;
+}
+
 .sectionsoc1 {
     display: flex;
     width: 100%;
@@ -517,18 +523,18 @@
         display: flex;
         flex-flow: row;
         width: 100%;
-        .diversi-container{
+        .divercontainer{
             display: flex;
             width: 100%;
         }
-        .diversity{
+        .divercontainer__diversidad{
             width: 50%;
             height: 28rem;
             padding: 0;
             margin: 1rem;
             justify-content: flex-start;
         }
-        .headsup{
+        .divercontainer__headsup{
             width: 50%;
             height: 28rem;
             padding: 0;
@@ -544,14 +550,14 @@
                 overflow-x: hidden;
             }
         
-            .diversi-container {
+            .divercontainer {
                 display: flex;
-                width: 100%;
+                min-width: 100%;
                 flex-direction: column;
             }
         
-            .diversity,
-            .headsup {
+            .divercontainer__diversidad,
+            .divercontainer__headsup {
                 width: 100%;
                 height: 24rem;
                 padding: 0;
@@ -564,18 +570,17 @@
         overflow-x: hidden;
     }
 }
-.precsoc {
-    width: $pdefaultwidth;
-    font-family: $primary-font;
-    font-size: 1.2rem;
-    display: flex;
-    justify-content: center;
-    margin-left: 10%;
-
-}
-.pepe {
+.dundies {
     position: static;
 
+    .dundies__premiacion {
+        width: $pdefaultwidth;
+        font-family: $primary-font;
+        font-size: 1.3rem;
+        display: flex;
+        justify-content: center;
+        margin-left: 10%;
+    }
 }
 
 .secdund {
@@ -592,7 +597,7 @@
         width: 100%;
         box-sizing: border-box;
 
-        .dund {
+        .dundiesbar__foto {
             width: 32%;
             box-sizing: border-box;
             margin: 0.5%;
@@ -622,14 +627,14 @@
     }
 }
 
-.contdundies {
+.dundiespresentacion {
     display: flex;
     flex-direction: column;
     width: 100%;
     align-items: center;
     position: relative;
 
-    .ifdund {
+    .dundiespresentacion_anfitriones {
         @include flex (flex, column, nowrap, center, center);
         width: 98%;
         margin-right: 1%;
@@ -638,14 +643,22 @@
         @media (max-width: 1210px) {
             position: relative;
             bottom: auto;
+            height: 400px;
+        }
+        @media (max-width: 400px) {
+            position: relative;
+            bottom: auto;
+            height: 200px;
         }
     }
-
+    .ganadores{
+        margin-top: 2rem
+    }
     .listaganadores {
         @include flex (flex, column, nowrap, flex-start, flex-start);
         width: 100%;
         padding: 0;
-        font-size: 1.2rem;
+        font-size: 1.3rem;
         font-family: $primary-font;
         line-height: 2;
 
@@ -664,50 +677,6 @@
     }
 }
 
-.sechallrs {
-
-    .fothalemp {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        grid-gap: 4px; 
-        margin-right: 1%;
-    }
-
-    .halfest {
-        max-width: 98%;
-        width: 80rem;
-        height: 20rem;
-        margin-left: 1%;
-    }
-    @media (max-width: 1199px) {
-        grid-template-columns: repeat(2, 1fr);
-    }
-    
-    @media (max-width: 576px) {
-        .slider {
-            aspect-ratio: 10/50;
-            width: 100%;
-            position: relative;
-            display: flex;
-            overflow: scroll;
-            scroll-snap-type: x mandatory;
-            margin: 0;
-            padding: 0;
-            height: 350px;
-        }
-
-        .hallslide {
-            width: 500px;
-            position: sticky;
-            object-fit: cover;
-            scroll-snap-align: center;
-            border-radius: 15px;
-        } 
-    }
-    @media (max-width: 576px) {
-        overflow-x: hidden;
-    }
-}
 .burga{
     color: #fff;
     width: 70px;
