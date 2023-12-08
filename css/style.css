@@ -162,8 +162,9 @@
 #top .navbar .divnav .navbar-brand {
   width: 150px;
   display: flex;
-  align-items: center;
+  flex-flow: row nowrap;
   justify-content: flex-start;
+  align-items: center;
   margin: 0;
   padding: 0;
 }
@@ -178,7 +179,7 @@
 #top .navbar .divnav .nav-item .navbar-nav {
   width: 100%;
   align-items: center;
-  justify-content: flex-end;
+  justify-content: end;
 }
 #top .navbar .divnav .nav-item .navbar-nav .nav-item2 {
   color: #fff;
@@ -187,6 +188,7 @@
   padding: 0;
   margin: 0;
   display: flex;
+  flex-flow: row nowrap;
   justify-content: flex-end;
   align-items: right;
   font-family: "miss-antonia";
@@ -374,8 +376,9 @@
   .veniaofici {
     width: auto;
     display: flex;
+    flex-flow: row nowrap;
     justify-content: center;
-    text-align: center;
+    align-items: center;
   }
 }
 
@@ -426,8 +429,9 @@
 @media (max-width: 993px) {
   .formtitle {
     display: flex;
-    align-items: center;
+    flex-flow: row nowrap;
     justify-content: center;
+    align-items: center;
     margin: 0%;
     padding: 0;
   }
@@ -441,8 +445,8 @@
 .formulario {
   height: 38rem;
   display: flex;
+  flex-flow: column nowrap;
   justify-content: center;
-  flex-flow: column;
   align-items: center;
   background-image: url(../assets/img/papiro.png);
   background-repeat: no-repeat;
@@ -462,6 +466,7 @@
 .formulario .form {
   font-family: "miss-antonia";
   display: flex;
+  flex-flow: row nowrap;
   justify-content: center;
   align-items: center;
   width: 100%;
@@ -474,7 +479,9 @@
   .formulario .form {
     max-width: 20rem;
     display: flex;
+    flex-flow: row nowrap;
     justify-content: center;
+    align-items: center;
     margin: 0 auto;
     margin-bottom: 1rem;
     padding: 0;
@@ -502,7 +509,9 @@
 @media (max-width: 993px) {
   .formulario .form .formcontainer {
     display: flex;
+    flex-flow: column nowrap;
     justify-content: center;
+    align-items: center;
     margin: 0%;
     padding: 0;
   }
@@ -550,51 +559,51 @@
 }
 
 .bodyp {
+  width: 100%;
+  max-width: 100%;
   min-height: 100vh;
   margin: 0;
   padding: 0%;
-  background-color: rgb(255, 255, 255);
+  background-color: rgb(0, 0, 0);
   overflow-x: hidden;
-}
-@media (max-width: 1210px) {
-  .bodyp {
-    overflow-x: hidden;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-  }
 }
 
 .rowpr {
   font-family: "$primary-font";
   font-size: 1.3rem;
-  margin-bottom: 5px;
+  margin-bottom: 100px;
   display: flex;
+  flex-flow: row wrap;
   justify-content: center;
   align-items: center;
-  flex-wrap: wrap;
-  align-content: center;
-  margin: 5px;
   width: 100%;
+  max-width: 100%;
 }
 @media (max-width: 1210px) {
   .rowpr {
-    flex-direction: column;
+    display: flex;
+    flex-flow: column nowrap;
     justify-content: center;
     align-items: center;
-    align-content: center;
-    margin-bottom: 8px;
+    overflow-x: hidden;
+    margin-bottom: 20px;
     padding: 0;
     width: 100%;
+    max-width: 100%;
+  }
+}
+@media (max-width: 375) {
+  .rowpr {
+    max-width: 100%;
   }
 }
 .rowpr .ptext {
-  font-family: "$primary-font";
+  font-family: "miss-antonia";
   display: flex;
+  flex-flow: row nowrap;
   justify-content: space-around;
   align-items: center;
-  margin: 5px;
+  margin-bottom: 5px;
 }
 .rowpr .boton-compra {
   background: rgb(2, 0, 36);
@@ -614,15 +623,35 @@
   background-position: right;
   transform: scale(2);
 }
+.rowpr .imgp {
+  max-width: 100%;
+}
 @media (max-width: 1210px) {
   .rowpr .imgp {
-    flex-direction: column;
+    display: flex;
+    flex-flow: column nowrap;
     justify-content: center;
     align-items: center;
-    align-content: center;
-    margin: 0;
+    margin: 1rem 0 1rem 0;
     padding: 0;
     width: 100%;
+    object-fit: scale-down;
+  }
+}
+@media (max-width: 440px) {
+  .rowpr .imgp {
+    max-width: 100%;
+    width: 100%;
+    height: auto;
+    padding: 0%;
+    max-width: 100%;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    margin-left: 0px;
+    margin-right: 0;
+    object-fit: scale-down;
   }
 }
 
@@ -635,6 +664,7 @@
 .dunderstaff {
   width: 90%;
   display: flex;
+  flex-flow: column nowrap;
   justify-content: center;
   align-items: center;
   margin: 5%;
@@ -698,10 +728,10 @@
 @media (max-width: 1210px) {
   .sectionsoc1 .rowrs .rowrs {
     display: flex;
-    width: 100%;
+    flex-flow: column nowrap;
     justify-content: center;
     align-items: center;
-    flex-direction: column;
+    width: 100%;
     margin: 0;
     padding: 0;
     overflow-x: hidden;
@@ -788,7 +818,7 @@
 }
 .contdundies .ifdund {
   display: flex;
-  flex-direction: column;
+  flex-flow: column nowrap;
   justify-content: center;
   align-items: center;
   width: 98%;
@@ -804,8 +834,9 @@
 }
 .contdundies .listaganadores {
   display: flex;
-  flex-direction: column;
+  flex-flow: column nowrap;
   justify-content: flex-start;
+  align-items: flex-start;
   width: 100%;
   padding: 0;
   font-size: 1.2rem;
@@ -892,6 +923,12 @@
     margin: 0;
     padding: 0;
   }
+}
+.mainproductos {
+  margin: 0;
+  padding: 0;
+  object-fit: scale-down;
+  overflow-x: hidden;
 }
 
 /*# sourceMappingURL=style.css.map */

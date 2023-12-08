@@ -1,6 +1,8 @@
 @import "./partials/_condicionales.scss";
 @import "./partials/variables";
 @import "./partials/bucles";
+@import "./partials/mixins";
+
 
 @font-face {
     font-family: miss-antonia;
@@ -43,9 +45,7 @@
     
                 .navbar-brand {
                     width: 150px;
-                    display: flex;
-                    align-items: center;
-                    justify-content: flex-start;
+                   @include flex(flex, row, nowrap, flex-start, center);
                     margin: 0;
                     padding: 0;
                 }
@@ -60,17 +60,14 @@
                     .navbar-nav {
                         width: 100%;
                         align-items: center;
-                        justify-content: flex-end;
-                        
+                        justify-content: end;
                         .nav-item2 {
                             color: #fff;
                             font-size: 1.4rem;
                             list-style: none;
                             padding: 0;
                             margin: 0;
-                            display: flex;
-                            justify-content: flex-end;
-                            align-items: right;
+                            @include flex (flex, row, nowrap, flex-end, right);
                             font-family: $primary-font;
                             .nav-link {
                                 color: white;
@@ -252,10 +249,7 @@
 .veniaofici{
     @media (max-width: 993px) {
         width: auto;
-        display: flex;
-        justify-content: center;
-        text-align: center;
-        
+        @include flex (flex, row, nowrap, center, center);
     }
 }
 .oficina {
@@ -295,9 +289,7 @@
     font-family: $primary-font;
     justify-content: center;
     @media (max-width: 993px) {
-        display: flex;
-        align-items: center;
-        justify-content: center;
+        @include flex (flex, row, nowrap, center, center);
         margin: 0%;
         padding: 0;
     }
@@ -307,10 +299,7 @@
 }
 .formulario{
     height: 38rem;
-    display: flex;
-    justify-content: center;
-    flex-flow: column;
-    align-items: center;
+    @include flex (flex, column, nowrap, center, center);
     background-image: url(../assets/img/papiro.png);
     background-repeat: no-repeat;
     background-size: auto; 
@@ -324,9 +313,7 @@
 
     .form {
         font-family: $primary-font;
-        display: flex;
-        justify-content: center;
-        align-items: center;
+        @include flex (flex, row, nowrap, center, center);
         width: 100%;
         max-width: 20rem;
         border-radius: 1rem;
@@ -334,8 +321,7 @@
         margin-bottom: 2rem; 
         @media (max-width: 993px) {
             max-width: 20rem;
-            display: flex;
-            justify-content: center;
+            @include flex (flex, row, nowrap, center, center);
             margin: 0 auto;
             margin-bottom: 1rem;
             padding: 0;
@@ -357,8 +343,7 @@
             align-items: center;
             text-align: left;
             @media (max-width: 993px) {
-                display: flex;
-                justify-content: center;
+                @include flex (flex, column, nowrap, center, center);
                 margin: 0%;
                 padding: 0;
             }
@@ -409,47 +394,39 @@
 }
 
 .bodyp {
+    width: 100%;
+    max-width: 100%;
     min-height: 100vh;
     margin: 0;
     padding: 0%;
-    background-color: rgb(255, 255, 255);
+    background-color: rgb(0, 0, 0);
     overflow-x: hidden;
-
-    @media (max-width: 1210px) {
-        overflow-x: hidden;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
-    }
 }
+
 .rowpr{
     font-family: '$primary-font';
     font-size: 1.3rem;
-    margin-bottom: 5px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-    align-content: center;
-    margin: 5px;
+    margin-bottom: 100px;
+    @include flex (flex, row, wrap, center, center);
     width: 100%;
+    max-width: 100%;
 
     @media (max-width: 1210px) {
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        align-content: center;
-        margin-bottom: 8px;
+        @include flex (flex, column, nowrap, center, center);
+        overflow-x: hidden;
+        margin-bottom: 20px;
         padding: 0;
         width: 100%;
+        max-width: 100%;
+    }
+    @media (max-width: 375) {
+        max-width: 100%;
+        
     }
     .ptext{
-        font-family: '$primary-font';
-        display: flex;
-        justify-content: space-around;
-        align-items: center;
-        margin: 5px;
+        font-family: $primary-font;
+        @include flex (flex, row, nowrap, space-around, center);
+        margin-bottom: 5px;
     }
 
     .boton-compra {
@@ -476,14 +453,24 @@
     }
     
     .imgp{
+        max-width: 100%;
         @media (max-width: 1210px) {
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            align-content: center;
-            margin: 0;
+            @include flex (flex, column, nowrap, center, center);
+            margin: 1rem 0 1rem 0;
             padding: 0;
             width: 100%;
+            object-fit: scale-down;
+        }
+        @media (max-width: 440px) {
+            max-width: 100%;
+            width: 100%;
+            height: auto;
+            padding: 0%;
+            max-width: 100%;
+            @include flex (flex, column, nowrap, center, center);
+            margin-left: 0px;
+            margin-right: 0;
+            object-fit: scale-down;
         }
     }
 }
@@ -495,9 +482,7 @@
   }  
   .dunderstaff{
     width: 90%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    @include flex (flex, column, nowrap, center, center);
     margin: 5%;
     }
 
@@ -552,11 +537,8 @@
         }
         @media (max-width: 1210px) {
             .rowrs {
-                display: flex;
+                @include flex (flex, column, nowrap, center, center);
                 width: 100%;
-                justify-content: center;
-                align-items: center;
-                flex-direction: column;
                 margin: 0;
                 padding: 0;
                 overflow-x: hidden;
@@ -648,10 +630,7 @@
     position: relative;
 
     .ifdund {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
+        @include flex (flex, column, nowrap, center, center);
         width: 98%;
         margin-right: 1%;
         max-width: 100%;
@@ -663,9 +642,7 @@
     }
 
     .listaganadores {
-        display: flex;
-        flex-direction: column;
-        justify-content: flex-start;
+        @include flex (flex, column, nowrap, flex-start, flex-start);
         width: 100%;
         padding: 0;
         font-size: 1.2rem;
@@ -749,4 +726,10 @@
         margin: 0;
         padding: 0;
     }
+}
+.mainproductos{
+    margin: 0;
+    padding: 0;
+    object-fit: scale-down;
+    overflow-x: hidden;
 }
