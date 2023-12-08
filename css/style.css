@@ -18,8 +18,9 @@
 @media (max-width: 450px) {
   .banerof {
     width: 100%;
-    background-image: url("../assets/img/asdasd.jpg");
+    background-image: url("../assets/img/banerresponsive.jpg");
     box-sizing: border-box;
+    height: 12rem;
   }
 }
 
@@ -95,6 +96,24 @@
     top: 31%;
     left: 35%;
   }
+}
+
+.titulo-1 {
+  font-size: 3.3rem;
+  font-family: "miss-antonia";
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.titulo-2 {
+  font-size: 1.65rem;
+  font-family: "miss-antonia";
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 @font-face {
@@ -351,17 +370,6 @@
   }
 }
 
-.contac {
-  font-size: "2rem";
-  font-family: "miss-antonia";
-  text-align: center;
-}
-
-.veniaofici {
-  font-size: "1.7rem";
-  font-family: "miss-antonia";
-  text-align: center;
-}
 @media (max-width: 993px) {
   .veniaofici {
     width: auto;
@@ -541,12 +549,6 @@
   margin: 5px;
 }
 
-.tit {
-  font-family: "miss-antonia";
-  display: flex;
-  justify-content: center;
-}
-
 .bodyp {
   min-height: 100vh;
   margin: 0;
@@ -564,7 +566,7 @@
   }
 }
 
-.row {
+.rowpr {
   font-family: "$primary-font";
   font-size: 1.3rem;
   margin-bottom: 5px;
@@ -577,7 +579,7 @@
   width: 100%;
 }
 @media (max-width: 1210px) {
-  .row {
+  .rowpr {
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -587,14 +589,14 @@
     width: 100%;
   }
 }
-.row .ptext {
+.rowpr .ptext {
   font-family: "$primary-font";
   display: flex;
   justify-content: space-around;
   align-items: center;
   margin: 5px;
 }
-.row .boton-compra {
+.rowpr .boton-compra {
   background: rgb(2, 0, 36);
   background-image: linear-gradient(90deg, rgb(2, 0, 36) 0%, rgb(9, 77, 121) 24%, rgb(0, 212, 255) 100%);
   background-size: 120%;
@@ -608,12 +610,12 @@
   text-decoration: none;
   font-family: "$primary-font";
 }
-.row .boton-compra:hover {
+.rowpr .boton-compra:hover {
   background-position: right;
   transform: scale(2);
 }
 @media (max-width: 1210px) {
-  .row .imgp {
+  .rowpr .imgp {
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -622,14 +624,6 @@
     padding: 0;
     width: 100%;
   }
-}
-
-.h1sobrenosotros {
-  display: flex;
-  justify-content: center;
-  font-size: "2rem";
-  font-family: "miss-antonia";
-  margin-top: 2%;
 }
 
 .snp {
@@ -646,25 +640,13 @@
   margin: 5%;
 }
 
-.misionvision {
-  font-family: "miss-antonia";
-}
-.misionvision .mision {
-  font-family: "miss-antonia";
-  display: flex;
-  justify-content: center;
-}
-.misionvision .vision {
-  font-family: "miss-antonia";
-  display: flex;
-  justify-content: center;
-}
-.misionvision .misionp {
+.misionp {
   width: 80%;
   margin-left: 10%;
   font-family: sans-serif;
 }
-.misionvision .visionp {
+
+.visionp {
   width: 80%;
   margin-left: 10%;
   font-family: sans-serif;
@@ -683,18 +665,6 @@
   .bodyrs {
     overflow-x: hidden;
   }
-}
-
-.titrecsoch1 {
-  font-family: "miss-antonia";
-  font-size: "2rem";
-  text-align: center;
-}
-
-.titrecsoch2 {
-  font-family: "miss-antonia";
-  font-size: "1.7rem";
-  text-align: center;
 }
 
 .sectionsoc1 {
@@ -758,7 +728,7 @@
 .precsoc {
   width: 80%;
   font-family: "miss-antonia";
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   display: flex;
   justify-content: center;
   margin-left: 10%;
@@ -835,12 +805,12 @@
 .contdundies .listaganadores {
   display: flex;
   flex-direction: column;
+  justify-content: flex-start;
   width: 100%;
-  margin-left: 8%;
   padding: 0;
-  font-size: 2rem;
+  font-size: 1.2rem;
   font-family: "miss-antonia";
-  line-height: 1;
+  line-height: 2;
 }
 @media (max-width: 1210px) {
   .contdundies .listaganadores {
@@ -858,12 +828,6 @@
     flex-direction: column;
   }
 }
-.tit2hal {
-  font-family: "miss-antonia";
-  font-size: "1.7rem";
-  text-align: center;
-}
-
 .sechallrs .fothalemp {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -911,6 +875,23 @@
   color: #fff;
   width: 70px;
   height: 40px;
+}
+
+.footerlogo {
+  background-image: url(../assets/img/Dunder-Mifflin-Symbol.png);
+  position: absolute;
+}
+
+.productoult {
+  margin-bottom: 4rem;
+}
+
+@media (max-width: 1210px) {
+  .footerwidth {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

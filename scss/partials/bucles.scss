@@ -1,0 +1,10 @@
+@for $i from 1 to 3{
+    .titulo-#{$i}{
+        font-size: 3rem / $i*1.1;
+        font-family: $primary-font;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
