@@ -990,4 +990,43 @@
   overflow-x: hidden;
 }
 
+.tituloerror {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+  margin-top: 15rem;
+  font-size: 6rem;
+  color: red;
+}
+
+.tituloerror2 {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+  font-size: 3rem;
+}
+
+.perror {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.5rem;
+}
+
+.botonback {
+  font-size: 1.5rem;
+  background-color: rgb(255, 255, 255);
+  padding: 0;
+  font-weight: 1000;
+  text-decoration: none;
+  color: rgb(1, 110, 15);
+  display: block;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+}
+
 /*# sourceMappingURL=style.css.map */
